@@ -108,14 +108,3 @@ Kwa Olga Website
 │
 └── Location
     └── location.html
-
-    
-### In VS Code
-
-1. Open your **Kwa Olga** folder.
-2. Right-click the main folder.
-3. Select **New File**.
-4. Name it:
-
-```text
-README.md
