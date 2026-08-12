@@ -77,6 +77,27 @@ The website contains the following pages:
 
 ---
 
+###References
+
+
+Images and Visual Assets
+
+Unsplash. (2026). Car wash and vehicle cleaning images. Available at: https://unsplash.com/ (Accessed: 12 August 2026).
+
+Kwa Olga. (2026). *Kwa Olga Car Wash & Lifestyle Lounge logo*. Original project asset.
+
+Kwa Olga. (2026). *Kwa Olga menu images*. Original project assets.
+
+### Website and HTML References
+
+Mozilla Developer Network (MDN). (2026). HTML documentation. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 12 August 2026).
+
+W3Schools. (2026). HTML Tutorial. Available at: https://www.w3schools.com/html/ (Accessed: 12 August 2026).
+
+### GitHub
+
+GitHub. (2026). GitHub Documentation. Available at: https://docs.github.com/ (Accessed: 12 August 2026).
+
 ## Sitemap
 
 ```text
@@ -108,23 +129,3 @@ Kwa Olga Website
 │
 └── Location
     └── location.html
-
-## References
-
-Independent Institute of Education (IIE). (2026). *WEDE5020 Web Development (Introduction): Part 1 assessment guidelines and rubric*. The Independent Institute of Education (Pty) Ltd.
-
-Mozilla Developer Network (MDN). (2025). *HTML: HyperText Markup Language*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 12 August 2026).
-
-Mozilla Developer Network (MDN). (2025). *HTML elements reference*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements (Accessed: 12 August 2026).
-
-W3C. (2026). *HTML Standard*. World Wide Web Consortium. Available at: https://html.spec.whatwg.org/ (Accessed: 12 August 2026).
-
-W3Schools. (2026). *HTML Tutorial*. Available at: https://www.w3schools.com/html/ (Accessed: 12 August 2026).
-
-GitHub. (2026). *GitHub Documentation: Getting started with GitHub*. Available at: https://docs.github.com/en/get-started (Accessed: 12 August 2026).
-
-Visual Studio Code. (2026). *Visual Studio Code Documentation*. Microsoft. Available at: https://code.visualstudio.com/docs (Accessed: 12 August 2026).
-
-Unsplash. (2026). *Car wash photograph*. Available at: https://unsplash.com/ [Accessed 12 August 2026].
-
-Kwa Olga. (2026). *Kwa Olga logo*. Original project asset.
