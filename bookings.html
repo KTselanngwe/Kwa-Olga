@@ -7,37 +7,72 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bookings | Kwa Olga</title>
+    <title>Kwa Olga | Bookings</title>
 
 </head>
 
 <body>
 
+    <!-- =========================
+         HEADER & NAVIGATION
+    ========================== -->
+
     <header>
 
-        <h1>
-            Kwa Olga
-        </h1>
+        <div class="logo">
+
+            <a href="index.html">
+                <img src="images/logo.jpeg"
+                     alt="Kwa Olga Car Wash & Lifestyle Lounge Logo"
+                     width="120">
+            </a>
+
+            <h1>KWA OLGA</h1>
+
+            <p>Car Wash & Lifestyle Lounge</p>
+
+        </div>
+
 
         <nav>
 
             <ul>
 
-                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
 
-                <li><a href="about.html">About Us</a></li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
 
-                <li><a href="bookings.html">Bookings</a></li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
 
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
 
-                <li><a href="events.html">Events</a></li>
+                <li>
+                    <a href="events.html">Specials & Events</a>
+                </li>
 
-                <li><a href="gallery.html">Gallery</a></li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
 
-                <li><a href="location.html">Location</a></li>
+                <li>
+                    <a href="bookings.html">Bookings</a>
+                </li>
 
-                <li><a href="menu.html">Menu</a></li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="location.html">Location</a>
+                </li>
 
             </ul>
 
@@ -46,139 +81,556 @@
     </header>
 
 
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
     <main>
 
-        <h1>
-            Book Your Kwa Olga Experience
-        </h1>
+        <!-- =========================
+             BOOKING INTRODUCTION
+        ========================== -->
 
-        <p>
-            Complete the form below to request your booking.
-        </p>
+        <section>
 
+            <h2>Book Your Kwa Olga Experience</h2>
 
-        <form>
+            <p>
+                Whether you are bringing your vehicle for a premium
+                clean or planning a special occasion with friends and
+                family, Kwa Olga is ready to make your experience
+                memorable.
+            </p>
 
-            <label for="name">
-                Full Name:
-            </label>
+            <p>
+                Choose from our premium car wash packages or make a
+                table reservation for your next visit.
+            </p>
 
-            <input
-                type="text"
-                id="name"
-                name="name"
-                required
-            >
-
-
-            <br><br>
+        </section>
 
 
-            <label for="vehicle">
-                Vehicle Type:
-            </label>
+        <!-- =========================
+             CAR WASH BOOKING
+        ========================== -->
 
-            <select id="vehicle" name="vehicle">
+        <section>
 
-                <option value="">
-                    Select Vehicle
-                </option>
+            <h2>Premium Car Wash Booking</h2>
 
-                <option value="sedan">
-                    Sedan
-                </option>
-
-                <option value="hatchback">
-                    Hatchback
-                </option>
-
-                <option value="suv">
-                    SUV
-                </option>
-
-                <option value="bakkie">
-                    Bakkie
-                </option>
-
-                <option value="other">
-                    Other
-                </option>
-
-            </select>
+            <p>
+                Book one of our premium car wash and detailing
+                packages for a complete vehicle care experience.
+            </p>
 
 
-            <br><br>
+            <form action="#" method="post">
+
+                <!-- Customer Name -->
+
+                <label for="wash-name">
+                    Full Name:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="wash-name"
+                    name="wash-name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <br><br>
 
 
-            <label for="service">
-                Service:
-            </label>
+                <!-- Contact Number -->
 
-            <select id="service" name="service">
+                <label for="wash-phone">
+                    Contact Number:
+                </label>
 
-                <option value="">
-                    Select Service
-                </option>
+                <br>
 
-                <option value="express">
-                    Express Wash
-                </option>
+                <input
+                    type="tel"
+                    id="wash-phone"
+                    name="wash-phone"
+                    placeholder="Enter your contact number"
+                    required
+                >
 
-                <option value="executive">
-                    Executive Valet
-                </option>
-
-                <option value="lifestyle">
-                    Lifestyle Lounge
-                </option>
-
-            </select>
+                <br><br>
 
 
-            <br><br>
+                <!-- Vehicle Type -->
+
+                <label for="vehicle">
+                    Vehicle Type:
+                </label>
+
+                <br>
+
+                <select id="vehicle" name="vehicle" required>
+
+                    <option value="">
+                        Select Vehicle Type
+                    </option>
+
+                    <option value="sedan">
+                        Sedan
+                    </option>
+
+                    <option value="hatchback">
+                        Hatchback
+                    </option>
+
+                    <option value="suv">
+                        SUV
+                    </option>
+
+                    <option value="bakkie">
+                        Bakkie
+                    </option>
+
+                    <option value="minibus">
+                        Minibus
+                    </option>
+
+                    <option value="luxury">
+                        Luxury Vehicle
+                    </option>
+
+                </select>
+
+                <br><br>
 
 
-            <label for="date">
-                Preferred Date:
-            </label>
+                <!-- Premium Wash Package -->
 
-            <input
-                type="date"
-                id="date"
-                name="date"
-            >
+                <label for="wash-package">
+                    Select Premium Wash Package:
+                </label>
+
+                <br>
+
+                <select id="wash-package"
+                        name="wash-package"
+                        required>
+
+                    <option value="">
+                        Select a Wash Package
+                    </option>
+
+                    <option value="executive-clean">
+                        Executive Clean - R280
+                    </option>
+
+                    <option value="premium-detail">
+                        Premium Detail - R350
+                    </option>
+
+                    <option value="full-vehicle-detail">
+                        Full Vehicle Detail - R500
+                    </option>
+
+                    <option value="premium-full-detail">
+                        Premium Full Detail - R800
+                    </option>
+
+                    <option value="kwa-olga-experience">
+                        The Kwa Olga Experience - R800
+                    </option>
+
+                </select>
+
+                <br><br>
 
 
-            <br><br>
+                <!-- Booking Date -->
+
+                <label for="wash-date">
+                    Preferred Date:
+                </label>
+
+                <br>
+
+                <input
+                    type="date"
+                    id="wash-date"
+                    name="wash-date"
+                    required
+                >
+
+                <br><br>
 
 
-            <label for="time">
-                Preferred Time:
-            </label>
+                <!-- Booking Time -->
 
-            <input
-                type="time"
-                id="time"
-                name="time"
-            >
+                <label for="wash-time">
+                    Preferred Time:
+                </label>
+
+                <br>
+
+                <input
+                    type="time"
+                    id="wash-time"
+                    name="wash-time"
+                    required
+                >
+
+                <br><br>
 
 
-            <br><br>
+                <!-- Additional Information -->
+
+                <label for="wash-message">
+                    Additional Information:
+                </label>
+
+                <br>
+
+                <textarea
+                    id="wash-message"
+                    name="wash-message"
+                    rows="5"
+                    cols="40"
+                    placeholder="Tell us anything we should know about your vehicle."
+                ></textarea>
+
+                <br><br>
 
 
-            <button type="submit">
-                Confirm Booking Request
-            </button>
+                <button type="submit">
+                    Request Car Wash Booking
+                </button>
 
-        </form>
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             TABLE BOOKING
+        ========================== -->
+
+        <section>
+
+            <h2>Book a Table</h2>
+
+            <p>
+                Planning a relaxed day at Kwa Olga? Reserve a table
+                for yourself, friends, family or a special occasion.
+            </p>
+
+
+            <form action="#" method="post">
+
+                <!-- Guest Name -->
+
+                <label for="table-name">
+                    Full Name:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="table-name"
+                    name="table-name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <br><br>
+
+
+                <!-- Contact Number -->
+
+                <label for="table-phone">
+                    Contact Number:
+                </label>
+
+                <br>
+
+                <input
+                    type="tel"
+                    id="table-phone"
+                    name="table-phone"
+                    placeholder="Enter your contact number"
+                    required
+                >
+
+                <br><br>
+
+
+                <!-- Number of Guests -->
+
+                <label for="guests">
+                    Number of Guests:
+                </label>
+
+                <br>
+
+                <select id="guests" name="guests" required>
+
+                    <option value="">
+                        Select Number of Guests
+                    </option>
+
+                    <option value="1">
+                        Table for 1
+                    </option>
+
+                    <option value="2">
+                        Table for 2
+                    </option>
+
+                    <option value="3">
+                        Table for 3
+                    </option>
+
+                    <option value="4">
+                        Table for 4
+                    </option>
+
+                    <option value="5-10">
+                        5 - 10 Guests
+                    </option>
+
+                    <option value="11-20">
+                        11 - 20 Guests
+                    </option>
+
+                    <option value="21+">
+                        21+ Guests
+                    </option>
+
+                </select>
+
+                <br><br>
+
+
+                <!-- Booking Type -->
+
+                <label for="booking-type">
+                    Type of Booking:
+                </label>
+
+                <br>
+
+                <select id="booking-type"
+                        name="booking-type"
+                        required>
+
+                    <option value="">
+                        Select Booking Type
+                    </option>
+
+                    <option value="casual">
+                        Casual Visit
+                    </option>
+
+                    <option value="birthday">
+                        Birthday Celebration
+                    </option>
+
+                    <option value="family">
+                        Family Gathering
+                    </option>
+
+                    <option value="function">
+                        Private Function
+                    </option>
+
+                    <option value="event">
+                        Event
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+                <br><br>
+
+
+                <!-- Booking Date -->
+
+                <label for="table-date">
+                    Booking Date:
+                </label>
+
+                <br>
+
+                <input
+                    type="date"
+                    id="table-date"
+                    name="table-date"
+                    required
+                >
+
+                <br><br>
+
+
+                <!-- Booking Time -->
+
+                <label for="table-time">
+                    Booking Time:
+                </label>
+
+                <br>
+
+                <input
+                    type="time"
+                    id="table-time"
+                    name="table-time"
+                    required
+                >
+
+                <br><br>
+
+
+                <!-- Special Occasion -->
+
+                <label for="occasion">
+                    Special Occasion Details:
+                </label>
+
+                <br>
+
+                <textarea
+                    id="occasion"
+                    name="occasion"
+                    rows="5"
+                    cols="40"
+                    placeholder="Tell us about your birthday, function, event or special occasion."
+                ></textarea>
+
+                <br><br>
+
+
+                <!-- Table Requirements -->
+
+                <label for="table-request">
+                    Special Requests:
+                </label>
+
+                <br>
+
+                <textarea
+                    id="table-request"
+                    name="table-request"
+                    rows="5"
+                    cols="40"
+                    placeholder="Enter any seating or table requirements."
+                ></textarea>
+
+                <br><br>
+
+
+                <button type="submit">
+                    Request Table Booking
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             BOOKING INFORMATION
+        ========================== -->
+
+        <section>
+
+            <h2>Booking Information</h2>
+
+            <p>
+                All bookings are requests and are subject to
+                confirmation by Kwa Olga.
+            </p>
+
+            <p>
+                For larger functions and events, please provide
+                as much information as possible so that the Kwa Olga
+                team can assist with your arrangements.
+            </p>
+
+            <p>
+                Please contact Kwa Olga directly if you need to
+                make changes to an existing booking.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             CALL TO ACTION
+        ========================== -->
+
+        <section>
+
+            <h2>Ready to Book?</h2>
+
+            <p>
+                Wash your car, grab a table and enjoy the Kwa Olga
+                experience.
+            </p>
+
+            <a href="contact.html">
+                Contact Kwa Olga
+            </a>
+
+        </section>
 
     </main>
 
 
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
+        <h2>KWA OLGA</h2>
+
         <p>
-            &copy; 2026 Kwa Olga. All Rights Reserved. ST10505914
+            Car Wash & Leisure Lounge
+        </p>
+
+        <p>
+            Wash. Chill. Eat. Drink. Repeat.
+        </p>
+
+
+        <h3>Quick Links</h3>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="menu.html">Menu</a>
+
+        <a href="events.html">Specials & Events</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a href="bookings.html">Bookings</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="location.html">Location</a>
+
+
+        <p>
+            &copy; 2026 Kwa Olga Car Wash & Leisure Lounge.
+            All Rights Reserved.
         </p>
 
     </footer>
