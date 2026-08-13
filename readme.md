@@ -14,6 +14,8 @@ GitHub Username: KTselanngwe
 
 Email:ST10505914@rcconnect.edu.za
 
+Lecturer: Mrs C Nukeri
+
 ---
 
 ## Project Overview
