@@ -1,0 +1,1051 @@
+/* =========================================================
+   KWA OLGA CAR WASH & LEISURE LOUNGE
+   WEDE5020 - PART 1
+   Main stylesheet for the entire website
+   ========================================================= */
+
+
+/* =========================================================
+   1. BASIC RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111111;
+    background-image:
+        linear-gradient(rgba(10, 10, 10, 0.58), rgba(10, 10, 10, 0.58)),
+        url("../images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #222222;
+    line-height: 1.6;
+}
+
+body.menu-page {
+    background-image:
+        linear-gradient(rgba(10, 10, 10, 0.62), rgba(10, 10, 10, 0.62)),
+        url("../images/shche_-team-L1U0oWEMEg4-unsplash.jpg");
+}
+
+
+/* =========================================================
+   2. IMAGES
+   ========================================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================================
+   3. LINKS
+   ========================================================= */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================================
+   4. HEADER
+   ========================================================= */
+
+header {
+    background-color: #111111;
+    color: white;
+    padding: 20px 5%;
+    border-bottom: 4px solid #8b0000;
+}
+
+
+/* =========================================================
+   5. LOGO AREA
+   ========================================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.logo p {
+    color: #d4a017;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   6. NAVIGATION
+   ========================================================= */
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #8b0000;
+    color: white;
+}
+
+
+/* =========================================================
+   7. MAIN CONTENT
+   ========================================================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+
+/* =========================================================
+   8. GENERAL SECTIONS
+   ========================================================= */
+
+section {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   9. HEADINGS
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #8b0000;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   10. HOMEPAGE HERO
+   ========================================================= */
+
+.hero {
+    min-height: 550px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("../images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+    padding: 50px 25px;
+}
+
+.page-intro {
+    background-image:
+        linear-gradient(rgba(5, 5, 5, 0.72), rgba(5, 5, 5, 0.72)),
+        url("../images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.page-intro h1,
+.page-intro h2,
+.page-intro h3,
+.page-intro p {
+    color: #ffffff;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-small-text {
+    color: #d4a017;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   11. BUTTONS
+   ========================================================= */
+
+button,
+main a {
+    display: inline-block;
+}
+
+.hero a,
+.call-to-action a,
+.gallery-cta a,
+main > section > a {
+    background-color: #8b0000;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.hero a:hover,
+.call-to-action a:hover,
+.gallery-cta a:hover,
+main > section > a:hover {
+    background-color: #5f0000;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   12. HERO BUTTONS
+   ========================================================= */
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.hero-buttons a {
+    margin: 5px;
+}
+
+
+/* =========================================================
+   13. SERVICE CARDS
+   ========================================================= */
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8f5f2;
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+
+/* =========================================================
+   14. GENERAL CARDS
+   ========================================================= */
+
+article {
+    background-color: #f8f5f2;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 4px solid #8b0000;
+    border-radius: 8px;
+}
+
+article h3 {
+    color: #8b0000;
+}
+
+
+/* =========================================================
+   15. GALLERY
+   ========================================================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery figure {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.gallery figcaption {
+    padding: 12px;
+    font-weight: bold;
+    color: #8b0000;
+}
+
+
+/* =========================================================
+   16. MENU PAGE
+   ========================================================= */
+
+.menu-downloads {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+}
+
+.menu-downloads h2 {
+    color: #d4a017;
+}
+
+.menu-downloads a {
+    margin: 8px;
+}
+
+.menu-downloads button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu-downloads button:hover {
+    background-color: #d4a017;
+    color: #111111;
+}
+
+
+/* =========================================================
+   17. MENU LISTS
+   ========================================================= */
+
+main ul {
+    padding-left: 25px;
+}
+
+main li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   18. BOOKINGS / FORMS
+   ========================================================= */
+
+form {
+    max-width: 850px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #8b0000;
+}
+
+form button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5f0000;
+}
+
+
+/* =========================================================
+   19. BOOKING SECTIONS
+   ========================================================= */
+
+.booking-section {
+    background-color: white;
+    border-left: 5px solid #8b0000;
+}
+
+.booking-section h2 {
+    color: #8b0000;
+}
+
+
+/* =========================================================
+   20. EVENTS
+   ========================================================= */
+
+.event-card {
+    background-color: #111111;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.event-card h2,
+.event-card h3 {
+    color: #d4a017;
+}
+
+
+/* =========================================================
+   21. LOCATION
+   ========================================================= */
+
+.location-map {
+    text-align: center;
+}
+
+.location-map img {
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.location-map a {
+    background-color: #8b0000;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   22. CONTACT
+   ========================================================= */
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.contact-details article {
+    margin: 0;
+}
+
+
+/* =========================================================
+   23. CALL TO ACTION
+   ========================================================= */
+
+.call-to-action {
+    text-align: center;
+    background-color: #111111;
+    color: white;
+}
+
+.call-to-action h2 {
+    color: #d4a017;
+}
+
+.call-to-action p {
+    color: white;
+}
+
+
+/* =========================================================
+   24. GALLERY CALL TO ACTION
+   ========================================================= */
+
+.gallery-cta {
+    text-align: center;
+    background-color: #8b0000;
+    color: white;
+}
+
+.gallery-cta h2 {
+    color: white;
+}
+
+.gallery-cta p {
+    color: white;
+}
+
+
+/* =========================================================
+   25. FOOTER
+   ========================================================= */
+
+footer {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 45px 5%;
+    border-top: 4px solid #8b0000;
+}
+
+footer h2,
+footer h3 {
+    color: #d4a017;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #d4a017;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   26. FOOTER QUICK LINKS
+   ========================================================= */
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    padding: 5px;
+}
+
+
+/* =========================================================
+   27. MOBILE / TABLET RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+}
+
+
+/* =========================================================
+   28. MOBILE PHONE DESIGN
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        width: 94%;
+        padding: 30px 0;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+        height: 220px;
+    }
+
+    .menu-downloads a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-downloads button {
+        width: 100%;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 35px 15px;
+    }
+}
+
+
+/* =========================================================
+   END OF KWA OLGA STYLE.CSS
+   ========================================================= */
+
+/* Kwa Olga logo palette: black, bright red, white, and chrome silver. */
+body {
+    background-color: #f2f3f4;
+    color: #1a1a1a;
+}
+
+header,
+.menu-downloads,
+.event-card,
+.call-to-action,
+footer {
+    background-color: #050505;
+}
+
+header,
+footer {
+    border-color: #e10619;
+}
+
+.logo p,
+.hero-small-text,
+.menu-downloads h2,
+.event-card h2,
+.event-card h3,
+.call-to-action h2,
+footer h2,
+footer h3 {
+    color: #cdd1d6;
+}
+
+nav a:hover,
+.hero a,
+.call-to-action a,
+.gallery-cta a,
+main > section > a,
+.menu-downloads button,
+form button,
+.location-map a {
+    background-color: #e10619;
+}
+
+nav a:hover,
+.hero a:hover,
+.call-to-action a:hover,
+.gallery-cta a:hover,
+main > section > a:hover,
+.menu-downloads button:hover,
+form button:hover,
+.location-map a:hover {
+    background-color: #a90414;
+}
+
+h2,
+article h3,
+.gallery figcaption,
+.booking-section h2 {
+    color: #e10619;
+}
+
+article,
+.booking-section {
+    border-color: #e10619;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #e10619;
+}
+
+/* Eye-catching typography using the Kwa Olga black, scarlet, charcoal,
+   white, and orange brand palette. */
+:root {
+    --matte-black: #090909;
+    --scarlet: #e10619;
+    --charcoal: #25272b;
+    --orange: #ff7a00;
+    --silver-white: #f7f7f5;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at 12% 8%, rgba(225, 6, 25, 0.08), transparent 28rem),
+        var(--silver-white);
+}
+
+header,
+footer,
+.menu-downloads,
+.event-card,
+.call-to-action {
+    background:
+        linear-gradient(135deg, rgba(255, 122, 0, 0.08), transparent 35%),
+        var(--matte-black);
+}
+
+h1,
+h2,
+h3 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-shadow: 3px 3px 0 var(--scarlet);
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    color: var(--scarlet);
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    text-shadow: 1px 1px 0 var(--orange);
+}
+
+h2::after {
+    display: block;
+    width: 65%;
+    height: 4px;
+    margin-top: 0.35rem;
+    content: "";
+    background: linear-gradient(90deg, var(--orange), var(--scarlet));
+    transform: skewX(-25deg);
+}
+
+h3 {
+    color: var(--charcoal);
+    font-size: 1.35rem;
+}
+
+p,
+li,
+label,
+input,
+select,
+textarea,
+button {
+    letter-spacing: 0.02em;
+}
+
+nav a {
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+nav a::after {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    left: 15px;
+    height: 2px;
+    content: "";
+    background: var(--orange);
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.hero h2 {
+    max-width: 850px;
+    color: #ffffff;
+    font-size: clamp(2.4rem, 8vw, 5rem);
+    line-height: 0.98;
+    text-shadow: 4px 4px 0 var(--scarlet), 7px 7px 0 rgba(0, 0, 0, 0.7);
+}
+
+.hero h2::after {
+    width: 100%;
+    height: 6px;
+}
+
+.hero-small-text {
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+.hero a,
+.call-to-action a,
+.gallery-cta a,
+main > section > a,
+.menu-downloads button,
+form button,
+.location-map a {
+    border: 2px solid var(--orange);
+    box-shadow: 4px 4px 0 var(--charcoal);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.hero a:hover,
+.call-to-action a:hover,
+.gallery-cta a:hover,
+main > section > a:hover,
+.menu-downloads button:hover,
+form button:hover,
+.location-map a:hover {
+    background-color: var(--orange);
+    color: var(--matte-black);
+}
+
+section {
+    border-top: 5px solid var(--scarlet);
+}
+
+article {
+    background-color: #ffffff;
+    border-left-color: var(--orange);
+}
+
+article h3,
+.gallery figcaption,
+.booking-section h2 {
+    color: var(--scarlet);
+}
+
+.event-card h2,
+.event-card h3,
+.call-to-action h2,
+footer h2,
+footer h3,
+.menu-downloads h2 {
+    color: var(--orange);
+    text-shadow: 2px 2px 0 var(--scarlet);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        text-shadow: 2px 2px 0 var(--scarlet);
+    }
+
+    .hero h2 {
+        text-shadow: 2px 2px 0 var(--scarlet);
+    }
+}
+
+/* Keep the brand style polished and relaxed instead of heavy. */
+h1,
+h2,
+.hero h2,
+.event-card h2,
+.event-card h3,
+.call-to-action h2,
+footer h2,
+footer h3,
+.menu-downloads h2 {
+    text-shadow: none;
+}
+
+.hero h2 {
+    font-weight: 400;
+    letter-spacing: 0.08em;
+}
+
+h2::after {
+    height: 3px;
+    opacity: 0.85;
+}
+
+.hero p {
+    color: #f4f4f4;
+}
+
+.hero a,
+.call-to-action a,
+.gallery-cta a,
+main > section > a,
+.menu-downloads button,
+form button,
+.location-map a {
+    box-shadow: none;
+    transition: background-color 0.25s ease, color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.hero a:hover,
+.call-to-action a:hover,
+.gallery-cta a:hover,
+main > section > a:hover,
+.menu-downloads button:hover,
+form button:hover,
+.location-map a:hover {
+    transform: translateY(-2px);
+}
