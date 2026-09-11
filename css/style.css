@@ -972,6 +972,58 @@ footer {
     }
 }
 
+/* Shared photographic backdrop for every page. */
+body,
+body.menu-page,
+body.home-page,
+body.events-page,
+body.gallery-page {
+    background-color: #151515;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.68), rgba(10, 10, 10, 0.68)), url("../images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-image: linear-gradient(rgba(5, 5, 5, 0.82), rgba(5, 5, 5, 0.82)), url("../images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    background: transparent;
+}
+
+section,
+.events-page main section,
+.gallery-page main section {
+    background-color: rgba(225, 226, 227, 0.94);
+}
+
+.home-page .hero,
+.page-intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url("../images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery-page main {
+    background-color: transparent;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url("../images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg");
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+    body,
+    body.menu-page,
+    body.home-page,
+    body.events-page,
+    body.gallery-page {
+        background-attachment: scroll;
+    }
+}
+
 /* Kwa Olga logo palette: black, bright red, white, and chrome silver. */
 body {
     background-color: #f2f3f4;
