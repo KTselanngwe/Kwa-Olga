@@ -6,13 +6,17 @@
 
 ## Student Information
 **Student Name:** Keabetswe Tselanngwe
+
 **Student Number:** ST10505914
+
 **GitHub Username:** KTselanngwe
+
 **Email:** [ST10505914@rcconnect.edu.za]
+
 **Lecturer:** Mrs C Nukeri
+
 **Module:** WEDE5020 Web Development
-**Development:** Part 1 and Part 2
-**Year:** 2026
+
 
 ---
 
