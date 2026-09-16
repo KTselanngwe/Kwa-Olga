@@ -1,176 +1,248 @@
 # Kwa Olga Car Wash & Lifestyle Lounge
+ **Kwa Olga Car Wash & Lifestyle Lounge** 
 
-## WEDE5020 Web Development 
-**Student:** Keabetswe Tselanngwe
+---
 
-**Student Number:** ST10505914
+## Project Information
+Student:Keabetswe Tselanngwe
 
-**Module:** WEDE5020 – Web Development
+Student Number:ST10505914
 
-**Lecturer:** Mrs C Nukeri
+Module:WEDE5020 – Web Development
 
+Lecturer:Mrs C Nukeri
 
 ---
 
 ## 1. Project Overview
-Kwa Olga Car Wash & Lifestyle Lounge is a website developed for a car wash and lifestyle lounge business.
+Kwa Olga Car Wash & Lifestyle Lounge is a website designed to provide customers with information about a car wash and lifestyle lounge business.
 
-The website was developed in two stages for the WEDE5020 Web Development module.
+The website was developed across **Part 1 and Part 2** of the WEDE5020 project.
 
-**Part 1** focused on planning and developing the website structure using HTML5. This included creating the different website pages, navigation, content, images, forms and links.
+### Part 1
+Part 1 focused on developing the foundation of the website using **HTML5**. This included:
 
-**Part 2** focused on improving the website using CSS3. This included creating an external stylesheet, applying consistent styling, improving the layout, adding responsive design for desktop, tablet and mobile devices, and making improvements based on feedback from Part 1.
+- Planning the website structure.
+- Creating the website pages.
+- Creating the navigation.
+- Adding business content.
+- Adding images.
+- Creating the menu.
+- Creating the events and specials section.
+- Creating the gallery.
+- Creating the booking page and form.
+- Creating the contact page and form.
+- Creating the location page.
+- Creating internal page links.
 
-The project uses **HTML5 and CSS3 only**. No JavaScript has been created or used.
+### Part 2
+Part 2 focused on improving the website using **CSS3** and implementing responsive design.
+
+This included:
+
+- Creating an external CSS stylesheet.
+- Applying consistent styling across all pages.
+- Improving typography.
+- Improving page layout.
+- Implementing Flexbox.
+- Implementing CSS Grid.
+- Adding CSS pseudo-classes.
+- Adding responsive media queries.
+- Creating responsive navigation.
+- Making images responsive.
+- Improving the desktop, tablet and mobile layouts.
+- Implementing changes based on Part 1 feedback.
+- Updating the README and CHANGELOG.
+- Testing and validating the website.
+
+The project uses **HTML5 and CSS3 only**. JavaScript was not created or used.
 
 ---
 
-# 2. Website Goals and Objectives
-The main objectives of the Kwa Olga website are to:
+# 2. Website Purpose
+The purpose of the website is to provide an online presence for Kwa Olga Car Wash & Lifestyle Lounge and make important business information easily accessible to customers.
 
-- Create a professional online presence for Kwa Olga Car Wash & Lifestyle Lounge.
-- Provide customers with information about the business.
-- Present the available car wash and lifestyle services.
-- Display the food and drinks menu.
-- Provide information about events and specials.
-- Display photographs through the gallery.
-- Allow customers to access booking information.
-- Provide contact information.
-- Provide the location of the business.
-- Create a consistent and user-friendly website design.
-- Make the website responsive on desktop, tablet and mobile devices.
-- Use semantic HTML5 and an external CSS3 stylesheet.
+The website allows visitors to:
+
+- Learn about Kwa Olga.
+- View available services and offerings.
+- View the food and drinks menu.
+- View events and specials.
+- View photographs in the gallery.
+- Access booking information.
+- Submit booking information.
+- Find contact information.
+- Find the business location.
 
 ---
 
 # 3. Target Audience
-The website is aimed at:
+The website is intended for:
 
+- Existing Kwa Olga customers.
+- Potential new customers.
 - Customers looking for car wash services.
 - Customers interested in food and drinks.
-- Customers looking for a place to relax and socialise.
 - Customers interested in events and specials.
-- Customers who want to make a booking.
-- Customers looking for the business location.
-- New and returning customers of Kwa Olga.
+- Customers looking for a social and lifestyle environment.
+- Customers who need booking or contact information.
 
 ---
 
-# 4. Part 1 – HTML5 Development
-Part 1 focused mainly on developing the structure and content of the website using HTML5.
+# 4. Website Pages
+The website consists of the following HTML pages:
 
-The website was divided into separate pages so that users can easily access different types of information.
+### Home
+`index.html`
 
-## Part 1 Development Included
+Introduces Kwa Olga Car Wash & Lifestyle Lounge and provides access to the main areas of the website.
 
-- Creating the website pages using HTML5.
-- Creating a consistent navigation structure.
-- Adding the Kwa Olga logo.
-- Adding headings and paragraphs.
-- Adding lists where required.
-- Adding images.
-- Creating the menu page.
-- Creating the events and specials page.
-- Creating the gallery.
-- Creating the bookings page.
-- Creating the contact page.
-- Creating the location page.
-- Adding forms for customer information.
-- Adding internal page links.
-- Adding external links where required.
-- Organising website content using appropriate HTML elements.
+### About Us
+`about.html`
 
----
+Provides information about Kwa Olga and the business.
 
-# 5. Website Pages
-The completed website contains the following pages:
+### Menu
+`menu.html`
 
-### Home – `index.html`
-The home page introduces Kwa Olga Car Wash & Lifestyle Lounge and provides access to the main areas of the website.
+Displays the available food and drinks.
 
-### About Us – `about.html`
-The About Us page provides information about Kwa Olga and the type of experience offered to customers.
+### Events
+`events.html`
 
-### Menu – `menu.html`
-The Menu page displays the food and drinks available at the lounge.
+Displays specials, events and related information.
 
-### Events – `events.html`
-The Events page provides information about specials, activities and events.
+### Gallery
+`gallery.html`
 
-### Gallery – `gallery.html`
-The Gallery page displays photographs related to Kwa Olga and its services.
+Displays photographs related to Kwa Olga.
 
-### Bookings – `bookings.html`
-The Bookings page provides customers with booking information and a booking form.
+### Bookings
+`bookings.html`
 
-### Contact – `contact.html`
-The Contact page provides contact information and a form that customers can use to submit enquiries.
+Provides booking information and a booking form.
 
-### Location – `location.html`
-The Location page provides information about where Kwa Olga is located and includes location/map information.
+### Contact
+`contact.html`
+
+Provides contact information and a contact form.
+
+### Location
+`location.html`
+
+Provides information about the business location and map information.
 
 ---
 
-# 6. Navigation
-A consistent navigation menu was implemented across the website.
+# 5. Website Features
+The website includes:
 
-The navigation provides links to:
-
-- Home
-- About Us
-- Menu
-- Events
-- Gallery
-- Bookings
-- Contact
-- Location
-
-The navigation was checked and restored across all pages during the Part 2 development stage.
-
-The logo is also kept visible in the header across the website.
+- Consistent navigation across all pages.
+- Kwa Olga logo in the header.
+- Responsive website layout.
+- Hero sections with background imagery.
+- Business information.
+- Food and drinks menu.
+- Events and specials.
+- Image gallery.
+- Booking form.
+- Contact form.
+- Location information.
+- Responsive images.
+- Interactive navigation links.
+- Hover and focus effects.
+- Responsive desktop, tablet and mobile layouts.
+- External CSS stylesheet.
 
 ---
 
-# 7. Part 2 – CSS3 Development
-Part 2 focused on improving the appearance, layout and responsiveness of the website.
+# 6. Part 1 – HTML5 Development
+Part 1 established the basic structure and content of the website.
 
-An external stylesheet was created:
+The HTML pages were developed using semantic HTML5 elements such as:
+
+- `<header>`
+- `<nav>`
+- `<main>`
+- `<section>`
+- `<article>`
+- `<footer>`
+- `<form>`
+- `<label>`
+- `<input>`
+- `<select>`
+- `<textarea>`
+- `<figure>`
+- `<figcaption>`
+
+The website was divided into separate pages to make the information easier for users to navigate.
+
+---
+
+# 7. Part 1 Feedback and Improvements
+Feedback and review from Part 1 were considered when developing Part 2.
+
+The main improvements made during Part 2 included:
+
+- Restoring and checking the complete navigation across all pages.
+- Ensuring the logo remains visible in the header.
+- Improving consistency between pages.
+- Creating a central external stylesheet.
+- Improving the visual hierarchy of headings and content.
+- Improving spacing and page layout.
+- Adding responsive design.
+- Improving navigation on smaller screens.
+- Improving image responsiveness.
+- Improving the gallery layout.
+- Adding hover and focus interaction.
+- Improving form styling.
+- Testing the website across different screen sizes.
+- Confirming that JavaScript was not required or introduced.
+
+These changes were recorded in the project's `CHANGELOG.md`.
+
+---
+
+# 8. Part 2 – CSS Development
+Part 2 uses an external stylesheet:
 
 ```css
 css/style.css
 ```
 
-The stylesheet is used throughout the website to maintain a consistent design.
+The external stylesheet is linked to the website pages and provides consistent styling throughout the project.
+
+The CSS includes:
+
+- Default styling.
+- Typography.
+- Colour scheme.
+- Layout.
+- Navigation.
+- Header.
+- Hero sections.
+- Buttons.
+- Forms.
+- Gallery.
+- Footer.
+- Responsive media queries.
+- Pseudo-classes.
+- Responsive images.
 
 ---
 
-# 8. Website Colour Scheme
-The main visual colour scheme is:
+# 9. CSS Default Styling
+The stylesheet uses a universal reset:
 
-- **Black**
-- **Grey**
-- **Red**
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
 
-White is also used where necessary for text, contrast and backgrounds.
-
-The colour scheme is used consistently across:
-
-- Header
-- Navigation
-- Buttons
-- Content sections
-- Hero sections
-- Forms
-- Gallery
-- Footer
-
----
-
-# 9. CSS Features
-The external stylesheet includes several CSS3 features.
-
-## CSS Custom Properties
-The project uses CSS custom properties in `:root` to store the main colours.
+CSS custom properties are used to manage the website's main colours:
 
 ```css
 :root {
@@ -183,87 +255,121 @@ The project uses CSS custom properties in `:root` to store the main colours.
 }
 ```
 
-This makes the colour scheme easier to maintain consistently.
+The project also uses:
 
-## CSS Reset
-A universal selector is used to reset default margins and padding.
+- `scroll-behavior: smooth`
+- `max-width`
+- `box-sizing`
+- Responsive image sizing
+- Consistent margins and padding
 
-```css
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-```
+---
 
-## Typography
+# 10. Typography
+Typography is controlled through the external stylesheet.
+
 The website uses:
 
-- Trebuchet MS
-- Arial
-- Responsive font sizes
-- `clamp()` for headings
-- Consistent line spacing
-- Uppercase headings
-
-## Flexbox
-Flexbox is used for:
-
-- Logo layout.
-- Header elements.
-- Navigation.
-- Hero content.
-
-## CSS Grid
-CSS Grid is used for the gallery.
-
-The gallery changes according to screen size:
-
-- Desktop: 3 columns.
-- Tablet: 2 columns.
-- Mobile: 1 column.
-
-## Background Images
-Background images are used in the main website sections and hero areas.
-
-The website background uses the following image:
-
 ```css
-images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg
+font-family: "Trebuchet MS", Arial, sans-serif;
 ```
 
-## Buttons
-Buttons are styled using CSS and change appearance when the user interacts with them.
+Responsive typography is implemented using CSS `clamp()`.
 
-## Forms
-Form elements such as:
+For example:
 
-- Input fields
-- Select fields
-- Text areas
-- Buttons
+```css
+font-size: clamp(2.5rem, 8vw, 5.2rem);
+```
 
-are styled consistently.
+This allows headings to adjust according to the size of the user's screen.
 
----
+The typography styling includes:
 
-# 10. CSS Pseudo-classes
-Pseudo-classes are used to improve user interaction.
-
-The project uses:
-
-- `:hover`
-- `:focus`
-- `:focus-visible`
-
-For example, navigation links and buttons change colour when the user moves over them or focuses on them.
+- Consistent heading sizes.
+- Uppercase headings.
+- Responsive headings.
+- Consistent line height.
+- Paragraph spacing.
+- Navigation typography.
+- Button typography.
 
 ---
 
-# 11. Responsive Design
-Responsive design was added during Part 2 to make the website work across different screen sizes.
+# 11. Layout Structure
+The website uses modern CSS layout techniques.
 
-The project contains three main CSS breakpoints:
+### Flexbox
+Flexbox is used for:
+
+- Logo alignment.
+- Header layout.
+- Navigation layout.
+- Hero content.
+
+### CSS Grid
+CSS Grid is used for the image gallery.
+
+The gallery displays:
+
+- Three columns on desktop.
+- Two columns on tablet.
+- One column on mobile.
+
+This allows the gallery to adapt to different screen sizes.
+
+---
+
+# 12. Colour and Visual Design
+The primary colour scheme consists of:
+
+- **Black**
+- **Grey**
+- **Red**
+
+White is used where necessary for contrast and readability.
+
+The colours are applied consistently to:
+
+- Header.
+- Navigation.
+- Buttons.
+- Hero sections.
+- Content sections.
+- Gallery.
+- Forms.
+- Footer.
+
+The website also uses a red border to provide visual separation and emphasis.
+
+---
+
+# 13. CSS Pseudo-classes
+Pseudo-classes are used to improve interaction and accessibility.
+
+The stylesheet uses:
+
+```css
+:hover
+:focus
+:focus-visible
+```
+
+These are applied to elements such as:
+
+- Navigation links.
+- Buttons.
+- Footer links.
+- Form controls.
+
+For example, navigation and buttons change to the red colour when the user hovers over or focuses on them.
+
+---
+
+# 14. Responsive Design
+Responsive design was implemented using CSS media queries.
+
+The project uses three main breakpoints:
 
 ```css
 1024px
@@ -271,25 +377,25 @@ The project contains three main CSS breakpoints:
 480px
 ```
 
-## Desktop
-The desktop layout provides:
+### Desktop – Above 1024px
+The desktop layout includes:
 
-- Full navigation.
-- Three-column gallery.
+- Larger logo.
+- Horizontal navigation.
 - Larger hero sections.
-- Larger images.
-- Wider content areas.
+- Three-column gallery.
+- Wider content sections.
 
-## Tablet
+### Tablet – 768px to 1024px
 The tablet layout adjusts:
 
-- Logo size.
+- Logo dimensions.
 - Navigation spacing.
 - Gallery to two columns.
-- Content widths.
-- Hero section sizing.
+- Content spacing.
+- Hero sections.
 
-## Mobile
+### Mobile – 480px to 768px
 The mobile layout includes:
 
 - Smaller logo.
@@ -297,24 +403,39 @@ The mobile layout includes:
 - Vertical navigation.
 - One-column gallery.
 - Smaller hero sections.
-- Full-width buttons where required.
 - Adjusted content spacing.
 
----
+### Small Mobile – Below 480px
+Additional adjustments are made for smaller mobile screens, including:
 
-# 12. Responsive Navigation
-The navigation was improved for smaller devices.
-
-On desktop, navigation links are displayed horizontally.
-
-On mobile devices, the navigation changes to a vertical layout so that the links are easier to access.
-
-The navigation also remains consistent across the website pages.
+- Smaller logo.
+- Smaller navigation text.
+- Reduced navigation padding.
+- Smaller hero headings.
+- Reduced hero height.
 
 ---
 
-# 13. Responsive Images
-Images are made responsive using:
+# 15. Responsive Navigation
+The navigation is responsive.
+
+On larger screens, navigation links are displayed horizontally.
+
+On mobile screens, the navigation changes to a vertical layout:
+
+```css
+nav ul {
+    flex-direction: column;
+    align-items: stretch;
+}
+```
+
+This makes the navigation links easier to use on smaller screens.
+
+---
+
+# 16. Responsive Images
+Images use responsive sizing:
 
 ```css
 img {
@@ -324,89 +445,33 @@ img {
 }
 ```
 
-This allows images to resize according to the available screen space while maintaining their proportions.
+This prevents images from overflowing their containers.
 
-The gallery images are also adjusted at different breakpoints.
-
----
-
-# 14. Part 1 Feedback and Part 2 Improvements
-The Part 2 development included improvements based on the requirements and feedback from Part 1.
-
-The main improvements included:
-
-- Restoring and checking navigation links across all pages.
-- Ensuring the logo remains visible in the header.
-- Creating and applying a central external stylesheet.
-- Improving the consistency of the website design.
-- Adding desktop styling.
-- Adding tablet styling.
-- Adding mobile styling.
-- Improving typography.
-- Improving page spacing and layout.
-- Adding responsive navigation.
-- Adding responsive images.
-- Improving the gallery layout.
-- Adding CSS hover and focus effects.
-- Improving form styling.
-- Maintaining the black, grey and red visual identity.
-- Confirming that no JavaScript files were created.
+Gallery images are also resized at smaller breakpoints.
 
 ---
 
-# 15. Testing and Validation
-The website was tested during both development stages.
+# 17. Background Images
+The website uses a background image from Unsplash.
 
-## Part 1 Testing
-The HTML pages were checked for:
+The image used in the CSS is:
 
-- Correct page structure.
-- Working navigation links.
-- Correct internal links.
-- Correct image paths.
-- Forms.
-- Consistent page structure.
-- Required website content.
+```css
+images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg
+```
 
-## Part 2 Testing
-The CSS and responsive layout were checked for:
+The image is used with CSS background properties including:
 
-- Correct external stylesheet linking.
-- Consistent styling across pages.
-- Desktop layout.
-- Tablet layout.
-- Mobile layout.
-- Responsive navigation.
-- Responsive images.
-- Gallery layout.
-- Hover effects.
-- Focus effects.
-- Form styling.
+- `background-image`
+- `background-position`
+- `background-size`
+- `background-attachment`
 
-The HTML pages and `style.css` were validated after the updates.
+A dark overlay is also used to improve text readability over the background image.
 
 ---
 
-# 16. Technologies and Tools
-The following technologies and tools were used:
-
-- **HTML5** – Website structure and content.
-- **CSS3** – Styling and responsive design.
-- **CSS Flexbox** – Layout.
-- **CSS Grid** – Gallery layout.
-- **CSS Media Queries** – Responsive design.
-- **CSS Custom Properties** – Colour management.
-- **Visual Studio Code** – Development environment.
-- **GitHub** – Version control and project repository.
-
-### JavaScript
-JavaScript is **not used** in this project.
-
-The project focuses specifically on **HTML5 and CSS3**.
-
----
-
-# 17. Project Structure
+# 18. Project Structure
 
 ```text
 Kwa-Olga/
@@ -433,74 +498,124 @@ Kwa-Olga/
 
 ---
 
-# 18. GitHub
-The project is stored and maintained using GitHub.
+# 19. Technologies and Tools
+The project was developed using:
 
-**Repository:** Kwa-Olga
-**GitHub Username:** KTselanngwe
+- **HTML5** – Website structure and content.
+- **CSS3** – Styling and responsive design.
+- **CSS Flexbox** – Page and component layouts.
+- **CSS Grid** – Gallery layout.
+- **CSS Media Queries** – Responsive design.
+- **CSS Custom Properties** – Colour management.
+- **Visual Studio Code** – Code editor.
+- **GitHub** – Version control and project hosting.
 
-GitHub is used to:
+### JavaScript
+JavaScript is not included in this project.
 
-- Store the project files.
-- Track development.
-- Record changes through commits.
-- Maintain different versions of the website.
-- Document the development process.
-
-Descriptive commits were used to record development activities such as:
-
-- Creating HTML pages.
-- Updating website content.
-- Fixing navigation.
-- Developing CSS.
-- Adding responsive design.
-- Updating documentation.
-- Final project improvements.
+The project focuses on the requirements for **HTML5 and CSS3**.
 
 ---
 
-# 19. Project Development Summary
+# 20. Testing and Validation
+Testing was carried out during the development of both Part 1 and Part 2.
 
-## Part 1
-Part 1 established the foundation of the website by developing the HTML5 structure and content.
+### HTML Testing
+The following were checked:
 
-The main work included:
+- All required HTML pages exist.
+- Navigation links work between pages.
+- Images load correctly.
+- Forms are present.
+- Internal links are correctly implemented.
+- Page structures are consistent.
 
-- Website planning.
-- Page creation.
+### CSS Testing
+The following were checked:
+
+- `style.css` is correctly linked.
+- Styling is applied consistently.
+- Colours are consistent.
+- Typography is consistent.
+- Buttons display correctly.
+- Forms are styled correctly.
+- Hover effects work.
+- Focus effects work.
+- Gallery layout works.
+
+### Responsive Testing
+The website was checked at:
+
+- Desktop screen sizes.
+- Tablet screen sizes.
+- Mobile screen sizes.
+
+Responsive changes were checked for:
+
 - Navigation.
-- Content.
-- Images.
-- Forms.
-- Gallery.
-- Menu.
-- Events.
-- Contact information.
-- Location information.
-
-## Part 2
-Part 2 developed the visual presentation and responsiveness of the website.
-
-The main work included:
-
-- External CSS stylesheet.
+- Logo.
 - Typography.
-- Colour scheme.
-- Layout.
-- Flexbox.
-- CSS Grid.
+- Hero sections.
+- Content sections.
+- Gallery.
+- Images.
 - Buttons.
-- Forms.
-- Pseudo-classes.
-- Responsive design.
-- Responsive navigation.
-- Responsive images.
-- Desktop, tablet and mobile breakpoints.
-- Improvements based on Part 1 feedback.
+
+The HTML pages and `style.css` were validated after the Part 2 updates.
 
 ---
 
-# 20. References
+# 21. GitHub and Version Control
+The project is stored in the GitHub repository:
+
+**Repository:** `Kwa-Olga`
+**Username:** `KTselanngwe`
+
+GitHub was used throughout the development process to:
+
+- Store the project.
+- Track changes.
+- Maintain project versions.
+- Record development progress.
+- Keep descriptive commits.
+
+Examples of development commit areas include:
+
+- Initial HTML development.
+- Page and content updates.
+- Navigation updates.
+- CSS implementation.
+- Responsive design.
+- Gallery improvements.
+- Final testing.
+- README and CHANGELOG updates.
+
+---
+
+# 22. Documentation
+The project includes two main documentation files:
+
+### README.md
+Documents:
+
+- Project information.
+- Project purpose.
+- Part 1 development.
+- Part 2 development.
+- Technologies.
+- Website pages.
+- CSS implementation.
+- Responsive design.
+- Testing.
+- GitHub development.
+- References.
+
+### CHANGELOG.md
+Records the development history of the website, including changes made during Part 1 and Part 2.
+
+---
+
+# 23. References
 The following sources and project assets were used during the development of the Kwa Olga Car Wash & Lifestyle Lounge website.
 
 1. **Unsplash. (2026).** *Car wash and vehicle cleaning images*. Available at: [https://unsplash.com/](https://unsplash.com/) (Accessed: 12 August 2026).
@@ -523,15 +638,24 @@ The following sources and project assets were used during the development of the
 
 ---
 
-# 21. Project Status
-**Part 1 – Completed**
+# 24. Project Status
 
-HTML5 structure, website pages, content, navigation, images, forms and links were developed.
+### Part 1
+**Completed**
 
-**Part 2 – Completed**
+The HTML5 structure, content, navigation, forms, images, gallery, menu, events, contact and location pages were developed.
 
-CSS3 styling, responsive design, navigation improvements, responsive images, layout improvements and documentation were completed.
+### Part 2
+**Completed**
 
-The final project contains the complete Part 1 and Part 2 development work and focuses on **HTML5 and CSS3 without JavaScript**.
+The external CSS stylesheet, desktop styling, responsive design, responsive navigation, responsive images, typography, layout, pseudo-classes and Part 1 improvements were implemented.
+
+### Current Project
+**Part 1 + Part 2 Completed**
+
+The current version contains the complete HTML5 and CSS3 development for the Kwa Olga Car Wash & Lifestyle Lounge website.
+
+---
+
 
 
