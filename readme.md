@@ -14,7 +14,7 @@ Lecturer:Mrs C Nukeri
 
 ---
 
-## 1. Project Overview
+## Project Overview
 Kwa Olga Car Wash & Lifestyle Lounge is a website designed to provide customers with information about a car wash and lifestyle lounge business.
 
 The website was developed across **Part 1 and Part 2** of the WEDE5020 project.
@@ -59,7 +59,7 @@ The project uses **HTML5 and CSS3 only**. JavaScript was not created or used.
 
 ---
 
-# 2. Website Purpose
+# Website Purpose
 The purpose of the website is to provide an online presence for Kwa Olga Car Wash & Lifestyle Lounge and make important business information easily accessible to customers.
 
 The website allows visitors to:
@@ -76,7 +76,7 @@ The website allows visitors to:
 
 ---
 
-# 3. Target Audience
+# Target Audience
 The website is intended for:
 
 - Existing Kwa Olga customers.
@@ -89,7 +89,7 @@ The website is intended for:
 
 ---
 
-# 4. Website Pages
+# Website Pages
 The website consists of the following HTML pages:
 
 ### Home
@@ -134,7 +134,7 @@ Provides information about the business location and map information.
 
 ---
 
-# 5. Website Features
+#  Website Features
 The website includes:
 
 - Consistent navigation across all pages.
@@ -156,7 +156,7 @@ The website includes:
 
 ---
 
-# 6. Part 1 – HTML5 Development
+# Part 1 – HTML5 Development
 Part 1 established the basic structure and content of the website.
 
 The HTML pages were developed using semantic HTML5 elements such as:
@@ -179,7 +179,7 @@ The website was divided into separate pages to make the information easier for u
 
 ---
 
-# 7. Part 1 Feedback and Improvements
+#  Part 1 Feedback and Improvements
 Feedback and review from Part 1 were considered when developing Part 2.
 
 The main improvements made during Part 2 included:
@@ -203,7 +203,7 @@ These changes were recorded in the project's `CHANGELOG.md`.
 
 ---
 
-# 8. Part 2 – CSS Development
+# Part 2 – CSS Development
 Part 2 uses an external stylesheet:
 
 ```css
@@ -231,7 +231,7 @@ The CSS includes:
 
 ---
 
-# 9. CSS Default Styling
+#  CSS Default Styling
 The stylesheet uses a universal reset:
 
 ```css
@@ -265,7 +265,7 @@ The project also uses:
 
 ---
 
-# 10. Typography
+# Typography
 Typography is controlled through the external stylesheet.
 
 The website uses:
@@ -296,7 +296,7 @@ The typography styling includes:
 
 ---
 
-# 11. Layout Structure
+#  Layout Structure
 The website uses modern CSS layout techniques.
 
 ### Flexbox
@@ -320,7 +320,7 @@ This allows the gallery to adapt to different screen sizes.
 
 ---
 
-# 12. Colour and Visual Design
+# Colour and Visual Design
 The primary colour scheme consists of:
 
 - **Black**
@@ -344,7 +344,7 @@ The website also uses a red border to provide visual separation and emphasis.
 
 ---
 
-# 13. CSS Pseudo-classes
+# CSS Pseudo-classes
 Pseudo-classes are used to improve interaction and accessibility.
 
 The stylesheet uses:
@@ -366,7 +366,7 @@ For example, navigation and buttons change to the red colour when the user hover
 
 ---
 
-# 14. Responsive Design
+# Responsive Design
 Responsive design was implemented using CSS media queries.
 
 The project uses three main breakpoints:
@@ -386,6 +386,8 @@ The desktop layout includes:
 - Three-column gallery.
 - Wider content sections.
 
+  ![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Desktop%20view.png). 
+
 ### Tablet – 768px to 1024px
 The tablet layout adjusts:
 
@@ -394,6 +396,8 @@ The tablet layout adjusts:
 - Gallery to two columns.
 - Content spacing.
 - Hero sections.
+
+  ![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Tablet%20view.png). 
 
 ### Mobile – 480px to 768px
 The mobile layout includes:
@@ -405,6 +409,9 @@ The mobile layout includes:
 - Smaller hero sections.
 - Adjusted content spacing.
 
+![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/0ea4d933f43179ded90e4982397ce91b78b455c2/images/Phone%20view.png). 
+
+
 ### Small Mobile – Below 480px
 Additional adjustments are made for smaller mobile screens, including:
 
@@ -413,10 +420,11 @@ Additional adjustments are made for smaller mobile screens, including:
 - Reduced navigation padding.
 - Smaller hero headings.
 - Reduced hero height.
+![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Phone%20view%202.png).
 
 ---
 
-# 15. Responsive Navigation
+#  Responsive Navigation
 The navigation is responsive.
 
 On larger screens, navigation links are displayed horizontally.
@@ -434,7 +442,7 @@ This makes the navigation links easier to use on smaller screens.
 
 ---
 
-# 16. Responsive Images
+#  Responsive Images
 Images use responsive sizing:
 
 ```css
@@ -451,7 +459,7 @@ Gallery images are also resized at smaller breakpoints.
 
 ---
 
-# 17. Background Images
+#  Background Images
 The website uses a background image from Unsplash.
 
 The image used in the CSS is:
@@ -471,7 +479,7 @@ A dark overlay is also used to improve text readability over the background imag
 
 ---
 
-# 18. Project Structure
+#  Project Structure
 
 ```text
 Kwa-Olga/
@@ -498,7 +506,7 @@ Kwa-Olga/
 
 ---
 
-# 19. Technologies and Tools
+#  Technologies and Tools
 The project was developed using:
 
 - **HTML5** – Website structure and content.
@@ -517,7 +525,7 @@ The project focuses on the requirements for **HTML5 and CSS3**.
 
 ---
 
-# 20. Testing and Validation
+#  Testing and Validation
 Testing was carried out during the development of both Part 1 and Part 2.
 
 ### HTML Testing
@@ -565,7 +573,7 @@ The HTML pages and `style.css` were validated after the Part 2 updates.
 
 ---
 
-# 21. GitHub and Version Control
+# GitHub and Version Control
 The project is stored in the GitHub repository:
 
 **Repository:** `Kwa-Olga`
@@ -592,7 +600,7 @@ Examples of development commit areas include:
 
 ---
 
-# 22. Documentation
+# Documentation
 The project includes two main documentation files:
 
 ### README.md
@@ -615,30 +623,46 @@ Records the development history of the website, including changes made during Pa
 
 ---
 
-# 23. References
+#  References
 The following sources and project assets were used during the development of the Kwa Olga Car Wash & Lifestyle Lounge website.
 
-1. **Unsplash. (2026).** *Car wash and vehicle cleaning images*. Available at: [https://unsplash.com/](https://unsplash.com/) (Accessed: 12 August 2026).
-2. **Unsplash – Ville Kaisla. (2026).** *Vehicle image used as the website background: ville-kaisla-HNCSCpWrVJA-unsplash.jpg*. Available at: [https://unsplash.com/](https://unsplash.com/) (Accessed: 12 August 2026).
-3. **Kwa Olga. (2026).** *Kwa Olga Car Wash & Lifestyle Lounge logo*. Original project asset.
-4. **Kwa Olga. (2026).** *Kwa Olga menu images*. Original project assets.
-5. **Mozilla Developer Network (MDN). (2026).** *HTML: HyperText Markup Language*. Available at: [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) (Accessed: 16 September 2026).
-6. **Mozilla Developer Network (MDN). (2026).** *CSS: Cascading Style Sheets*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) (Accessed: 16 September 2026).
-7. **Mozilla Developer Network (MDN). (2026).** *CSS Flexible Box Layout*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout) (Accessed: 16 September 2026).
-8. **Mozilla Developer Network (MDN). (2026).** *CSS Grid Layout*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout) (Accessed: 16 September 2026).
-9. **Mozilla Developer Network (MDN). (2026).** *CSS Media Queries*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries) (Accessed: 16 September 2026).
-10. **Mozilla Developer Network (MDN). (2026).** *CSS Pseudo-classes*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) (Accessed: 16 September 2026).
-11. **Mozilla Developer Network (MDN). (2026).** *Using CSS custom properties*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_CSS_custom_properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_CSS_custom_properties) (Accessed: 16 September 2026).
-12. **Mozilla Developer Network (MDN). (2026).** *CSS clamp() function*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp) (Accessed: 16 September 2026).
-13. **W3Schools. (2026).** *HTML Tutorial*. Available at: [https://www.w3schools.com/html/](https://www.w3schools.com/html/) (Accessed: 16 September 2026).
-14. **W3Schools. (2026).** *CSS Tutorial*. Available at: [https://www.w3schools.com/css/](https://www.w3schools.com/css/) (Accessed: 16 September 2026).
-15. **W3Schools. (2026).** *Responsive Web Design*. Available at: [https://www.w3schools.com/css/css_rwd_intro.asp](https://www.w3schools.com/css/css_rwd_intro.asp) (Accessed: 16 September 2026).
-16. **GitHub. (2026).** *GitHub Documentation*. Available at: [https://docs.github.com/](https://docs.github.com/) (Accessed: 16 September 2026).
-17. **Microsoft. (2026).** *Visual Studio Code Documentation*. Available at: [https://code.visualstudio.com/docs](https://code.visualstudio.com/docs) (Accessed: 16 September 2026).
+ **Unsplash. (2026).** *Car wash and vehicle cleaning images*. Available at: [https://unsplash.com/](https://unsplash.com/) (Accessed: 12 August 2026).
+ 
+ **Unsplash – Ville Kaisla. (2026).** *Vehicle image used as the website background: ville-kaisla-HNCSCpWrVJA-unsplash.jpg*. Available at: [https://unsplash.com/](https://unsplash.com/) (Accessed: 12 August 2026).
+ 
+ **Kwa Olga. (2026).** *Kwa Olga Car Wash & Lifestyle Lounge logo*. Original project asset.
+ 
+ **Kwa Olga. (2026).** *Kwa Olga menu images*. Original project assets.
+ 
+ **Mozilla Developer Network (MDN). (2026).** *HTML: HyperText Markup Language*. Available at: [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) (Accessed: 16 September 2026).
+ 
+ **Mozilla Developer Network (MDN). (2026).** *CSS: Cascading Style Sheets*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) (Accessed: 16 September 2026).
+ 
+ **Mozilla Developer Network (MDN). (2026).** *CSS Flexible Box Layout*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout) (Accessed: 16 September 2026).
+ 
+ **Mozilla Developer Network (MDN). (2026).** *CSS Grid Layout*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout) (Accessed: 16 September 2026).
+ 
+ **Mozilla Developer Network (MDN). (2026).** *CSS Media Queries*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries) (Accessed: 16 September 2026).
+ 
+ **Mozilla Developer Network (MDN). (2026).** *CSS Pseudo-classes*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) (Accessed: 16 September 2026).
+ 
+ **Mozilla Developer Network (MDN). (2026).** *Using CSS custom properties*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_CSS_custom_properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_CSS_custom_properties) (Accessed: 16 September 2026).
+ 
+ **Mozilla Developer Network (MDN). (2026).** *CSS clamp() function*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp) (Accessed: 16 September 2026).
+ 
+ **W3Schools. (2026).** *HTML Tutorial*. Available at: [https://www.w3schools.com/html/](https://www.w3schools.com/html/) (Accessed: 16 September 2026).
+ 
+ **W3Schools. (2026).** *CSS Tutorial*. Available at: [https://www.w3schools.com/css/](https://www.w3schools.com/css/) (Accessed: 16 September 2026).
+ 
+ **W3Schools. (2026).** *Responsive Web Design*. Available at: [https://www.w3schools.com/css/css_rwd_intro.asp](https://www.w3schools.com/css/css_rwd_intro.asp) (Accessed: 16 September 2026).
+ 
+ **GitHub. (2026).** *GitHub Documentation*. Available at: [https://docs.github.com/](https://docs.github.com/) (Accessed: 16 September 2026).
+ 
+ **Microsoft. (2026).** *Visual Studio Code Documentation*. Available at: [https://code.visualstudio.com/docs](https://code.visualstudio.com/docs) (Accessed: 16 September 2026).
 
 ---
 
-# 24. Project Status
+#  Project Status
 
 ### Part 1
 **Completed**
