@@ -386,6 +386,8 @@ The desktop layout includes:
 - Three-column gallery.
 - Wider content sections.
 
+  ![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Desktop%20view.png). 
+
 ### Tablet – 768px to 1024px
 The tablet layout adjusts:
 
@@ -394,6 +396,8 @@ The tablet layout adjusts:
 - Gallery to two columns.
 - Content spacing.
 - Hero sections.
+
+  ![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Tablet%20view.png). 
 
 ### Mobile – 480px to 768px
 The mobile layout includes:
@@ -416,6 +420,7 @@ Additional adjustments are made for smaller mobile screens, including:
 - Reduced navigation padding.
 - Smaller hero headings.
 - Reduced hero height.
+![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Phone%20view%202.png).
 
 ---
 
