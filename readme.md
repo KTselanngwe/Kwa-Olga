@@ -405,6 +405,9 @@ The mobile layout includes:
 - Smaller hero sections.
 - Adjusted content spacing.
 
+![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/0ea4d933f43179ded90e4982397ce91b78b455c2/images/Phone%20view.png). 
+
+
 ### Small Mobile – Below 480px
 Additional adjustments are made for smaller mobile screens, including:
 
