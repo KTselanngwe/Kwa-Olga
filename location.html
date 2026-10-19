@@ -8,8 +8,12 @@
 
     <!-- Makes the website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Kwa Olga Car Wash & Lifestyle Lounge in Meadowlands, Soweto, with an interactive OpenStreetMap and visit information.">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+    <script src="js/script.js" defer></script>
 
     <!-- Browser tab title -->
     <title>Location | Kwa Olga</title>
@@ -40,7 +44,7 @@
 
         </a>
 
-        <h1>KWA OLGA</h1>
+        <p class="brand-name">KWA OLGA</p>
 
         <p>Car Wash & Lifestyle Lounge</p>
 
@@ -89,6 +93,8 @@
                 <a href="location.html">Location</a>
             </li>
 
+            <li><a href="register.html">Register</a></li>
+
         </ul>
 
     </nav>
@@ -111,7 +117,7 @@
 
         <p>KWA OLGA</p>
 
-        <h2>Find Us</h2>
+        <h1>Find Us</h1>
 
         <p>
             Come through to Kwa Olga Car Wash & Leisure Lounge
@@ -138,33 +144,17 @@
             Meadowlands, Soweto
         </p>
 
-        <!-- Replace the text below with the actual address -->
-
         <p>
-            <strong>Address:</strong>
-            YOUR FULL ADDRESS HERE
+            <strong>Area:</strong>
+            Meadowlands, Soweto (exact street address to be confirmed)
         </p>
 
 
-        <!-- =========================
-             MAP IMAGE
-        ========================== -->
-
-        <div class="map">
-
-            <h3>Find Us on the Map</h3>
-
-            <!--
-                Replace "map.jpg" with the exact
-                filename of your map picture.
-            -->
-
-            <img
-                src="images/Map picture.png"
-                alt="Map showing the location of Kwa Olga"
-                width="500"
-            >
-
+        <div class="location-map">
+            <h3>Interactive Map</h3>
+            <p>The marker shows an approximate Meadowlands location. Tap or click the map to read coordinates.</p>
+            <div id="business-map" data-latitude="-26.2207" data-longitude="27.9058" aria-label="Interactive map showing the approximate Kwa Olga location in Meadowlands, Soweto"></div>
+            <p id="map-status" role="status" aria-live="polite">Map marker is approximate; confirm the exact pin before travelling.</p>
         </div>
 
 
@@ -182,20 +172,13 @@
             </p>
 
 
-            <!--
-                REPLACE THE URL BELOW WITH YOUR
-                ACTUAL GOOGLE MAPS LINK.
-
-                Example:
-                https://www.google.com/maps/...
-            -->
-
             <a
                 href="https://www.google.com/maps/search/?api=1&query=Meadowlands+3166+Shinkova+Meadowlands+West+Zone+10+Meadowlands+West+1803"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="button"
             >
-                <button type="button">Open in Google Maps</button>
+                Open in Google Maps
             </a>
 
         </div>

@@ -1,7 +1,28 @@
 # CHANGELOG
 
 # Kwa Olga Car Wash & Lifestyle Lounge
-This changelog records the development and updates made to the Kwa Olga website throughout Part 1 and Part 2 of the WEDE5020 Web Development project.
+This changelog records the development and updates made to the Kwa Olga website throughout Parts 1, 2 and 3 of the WEDE5020 Web Development project.
+
+---
+
+## [Part 3] – October 2026
+
+### Added
+
+- Added shared JavaScript in `js/script.js` with strict mode and `DOMContentLoaded` initialization.
+- Added accessible gallery lightboxes with close button, outside click and Escape support.
+- Added page-section search with empty, no-result and clear states.
+- Added client-side validation and live feedback for bookings, enquiries and registration.
+- Added a registration page with minimum password length and matching confirmation checks.
+- Added Leaflet 1.9.4 maps with OpenStreetMap attribution on location, contact and bookings pages.
+- Added the supplied WhatsApp MP4 as a bookings and gallery background with a static fallback.
+- Added unique page descriptions, one content h1 per page and the shared deferred script.
+
+### Notes
+
+- Booking, enquiry and registration forms are front-end demonstrations and are not connected to a backend.
+- The map marker is approximate because the project materials do not specify verified coordinates or a full street address.
+- Video compression guidance and browser testing are documented with the Part 3 handoff.
 
 ---
 
@@ -218,7 +239,9 @@ The following improvements were implemented during Part 2:
 - External CSS Implemented
 - Responsive Design Implemented
 - Navigation Updated
-- JavaScript Not Used
+- JavaScript Implemented in `js/script.js`
+- Registration Page Added
+- Leaflet Maps and OpenStreetMap Implemented
 - README Updated
 - CHANGELOG Updated
 - GitHub Repository Updated

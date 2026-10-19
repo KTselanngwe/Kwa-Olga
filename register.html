@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create a demonstration Kwa Olga account profile with client-side validation. No account information is stored or sent.">
+    <title>Register | Kwa Olga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="contact-page">
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpeg" alt="Kwa Olga Car Wash & Lifestyle Lounge logo" width="120" height="120"></a>
+            <div>
+                <p class="brand-name">Kwa Olga</p>
+                <p>Car Wash & Lifestyle Lounge</p>
+            </div>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Services & Menu</a></li>
+                <li><a href="events.html">Specials & Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="register.html" aria-current="page">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <h1>Register</h1>
+            <p>Set up a sample profile for the Kwa Olga website demonstration.</p>
+        </section>
+        <section>
+            <h2>Create an Account</h2>
+            <form data-local-form data-form-type="registration">
+                <label for="register-name">Full name:</label>
+                <input id="register-name" name="name" type="text" autocomplete="name" required>
+
+                <label for="register-email">Email address:</label>
+                <input id="register-email" name="email" type="email" autocomplete="email" required>
+
+                <label for="register-password">Password (at least 12 characters):</label>
+                <input id="register-password" name="password" type="password" minlength="12" autocomplete="new-password" required>
+
+                <label for="register-password-confirmation">Confirm password:</label>
+                <input id="register-password-confirmation" name="password-confirmation" type="password" minlength="12" autocomplete="new-password" required>
+
+                <button type="submit">Validate Registration</button>
+                <p>This is a front-end demonstration only. Account details are not stored or sent.</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Kwa Olga Car Wash & Lifestyle Lounge. All Rights Reserved. ST10505914</p>
+    </footer>
+</body>
+</html>

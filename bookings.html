@@ -6,14 +6,25 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a premium car wash, detailing or table booking at Kwa Olga Car Wash & Lifestyle Lounge in Meadowlands, Soweto.">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+    <script src="js/script.js" defer></script>
 
     <title>Kwa Olga | Bookings</title>
 
 </head>
 
 <body class="bookings-page">
+
+    <div class="video-stage" aria-hidden="true">
+        <video class="video-background" autoplay muted loop playsinline preload="auto" poster="images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg">
+            <source src="videos/WhatsApp Video 2026-10-19 at 10.37.24.mp4" type="video/mp4">
+        </video>
+        <div class="video-shade"></div>
+    </div>
 
     <!-- ========================= HEADER & NAVIGATION ========================== -->
 
@@ -27,7 +38,7 @@
                      width="120">
             </a>
 
-            <h1>KWA OLGA</h1>
+            <p class="brand-name">KWA OLGA</p>
 
             <p>Car Wash & Lifestyle Lounge</p>
 
@@ -74,6 +85,8 @@
                     <a href="location.html">Location</a>
                 </li>
 
+                <li><a href="register.html">Register</a></li>
+
             </ul>
 
         </nav>
@@ -89,7 +102,7 @@
 
         <section class="page-hero">
 
-            <h2>Book Your Kwa Olga Experience</h2>
+            <h1>Book Your Kwa Olga Experience</h1>
 
             <p>
                 Whether you are bringing your vehicle for a premium
@@ -120,7 +133,7 @@
             </p>
 
 
-            <form action="#" method="post">
+            <form data-local-form data-form-type="booking">
 
                 <!-- Customer Name -->
 
@@ -322,7 +335,7 @@
             </p>
 
 
-            <form action="#" method="post">
+            <form data-local-form data-form-type="booking">
 
                 <!-- Guest Name -->
 
@@ -534,6 +547,13 @@
 
             </form>
 
+        </section>
+
+        <section class="location-map">
+            <h2>Find Kwa Olga</h2>
+            <p>The marker shows an approximate Meadowlands location. Tap or click the map to read coordinates.</p>
+            <div id="business-map" data-latitude="-26.2207" data-longitude="27.9058" aria-label="Interactive map showing the approximate Kwa Olga location in Meadowlands, Soweto"></div>
+            <p id="map-status" role="status" aria-live="polite">Map marker is approximate; confirm the exact pin before travelling.</p>
         </section>
 
 

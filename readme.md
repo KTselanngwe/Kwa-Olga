@@ -55,7 +55,10 @@ This included:
 - Updating the README and CHANGELOG.
 - Testing and validating the website.
 
-The project uses **HTML5 and CSS3 only**. JavaScript was not created or used.
+### Part 3
+Part 3 adds a shared JavaScript implementation in `js/script.js` for accessible gallery lightboxes, section search, client-side form validation, registration password checks, a click-triggered alert, and interactive Leaflet maps. The bookings and gallery pages use the supplied WhatsApp video as a desktop background, with a static image fallback on mobile and for reduced-motion preferences.
+
+The project uses **HTML5, CSS3 and JavaScript**. Forms are demonstration-only and do not send or store data.
 
 ---
 
@@ -132,6 +135,11 @@ Provides contact information and a contact form.
 
 Provides information about the business location and map information.
 
+### Registration
+`register.html`
+
+Demonstrates accessible client-side registration validation without storing account details.
+
 ---
 
 #  Website Features
@@ -153,6 +161,10 @@ The website includes:
 - Hover and focus effects.
 - Responsive desktop, tablet and mobile layouts.
 - External CSS stylesheet.
+- Shared JavaScript interactions and accessible form feedback.
+- Interactive OpenStreetMap maps with Leaflet.
+- Responsive video backgrounds on bookings and gallery pages.
+- Section search and gallery lightbox.
 
 ---
 

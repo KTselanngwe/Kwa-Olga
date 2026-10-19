@@ -6,8 +6,12 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Kwa Olga Car Wash & Lifestyle Lounge in Meadowlands, Soweto, or send a service, event or general enquiry.">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+    <script src="js/script.js" defer></script>
 
     <title>Contact | Kwa Olga</title>
 
@@ -22,7 +26,7 @@
                 <img src="images/logo.jpeg" alt="Kwa Olga Car Wash & Lifestyle Lounge Logo" width="120" height="120">
             </a>
             <div>
-                <h1>Kwa Olga</h1>
+                <p class="brand-name">Kwa Olga</p>
                 <p>Car Wash & Lifestyle Lounge</p>
             </div>
         </div>
@@ -46,6 +50,8 @@
                 <li><a href="gallery.html">Gallery</a></li>
 
                 <li><a href="location.html">Location</a></li>
+
+                <li><a href="register.html">Register</a></li>
 
                 <li><a href="menu.html">Menu</a></li>
 
@@ -91,14 +97,19 @@
 
         </section>
 
+        <section class="location-map">
+            <h2>Find Kwa Olga</h2>
+            <p>The marker shows an approximate Meadowlands location. Tap or click the map to read coordinates.</p>
+            <div id="business-map" data-latitude="-26.2207" data-longitude="27.9058" aria-label="Interactive map showing the approximate Kwa Olga location in Meadowlands, Soweto"></div>
+            <p id="map-status" role="status" aria-live="polite">Map marker is approximate; confirm the exact pin before travelling.</p>
+        </section>
+
 
         <section>
 
-            <h2>
-                Send Us a Message
-            </h2>
+            <h2>Send an Enquiry</h2>
 
-            <form>
+            <form data-local-form data-form-type="enquiry">
 
                 <label for="contact-name">
                     Full Name:
@@ -130,9 +141,16 @@
                 <br><br>
 
 
-                <label for="message">
-                    Message:
-                </label>
+                <label for="enquiry-type">Enquiry Type:</label>
+                <select id="enquiry-type" name="enquiry-type" required>
+                    <option value="">Select an enquiry type</option>
+                    <option value="car-wash">Car wash or detailing</option>
+                    <option value="booking">Booking</option>
+                    <option value="event">Events or catering</option>
+                    <option value="general">General enquiry</option>
+                </select>
+
+                <label for="message">Message (at least 10 characters):</label>
 
                 <br>
 
@@ -141,6 +159,8 @@
                     name="message"
                     rows="6"
                     cols="40"
+                    minlength="10"
+                    required
                 ></textarea>
 
 
@@ -148,8 +168,10 @@
 
 
                 <button type="submit">
-                    Send Message
+                    Check Enquiry
                 </button>
+
+                <p>This enquiry form is a front-end demonstration and is not connected to a backend. It will not send or store your message.</p>
 
             </form>
 
