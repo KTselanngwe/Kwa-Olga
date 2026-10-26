@@ -11,6 +11,8 @@
     <meta name="description" content="Browse photographs of Kwa Olga Car Wash & Lifestyle Lounge, including vehicle care, food, drinks and the venue experience.">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg-car.css">
+    <script src="js/bg-car.js" defer></script>
     <script src="js/script.js" defer></script>
 
     <!-- Browser tab title -->
@@ -18,7 +20,13 @@
 
 </head>
 
-<body class="gallery-page">
+<body class="gallery-page" data-car="gallery">
+    <div class="video-stage" aria-hidden="true">
+        <video id="cinematic-background" class="video-background" autoplay muted loop playsinline preload="metadata" poster="images/video-poster.jpg" aria-hidden="true" tabindex="-1">
+            <source data-src="videos/kwa-olga-tiktok.mp4" type="video/mp4">
+        </video>
+        <div class="video-shade"></div>
+    </div>
 
     <!-- =========================
          HEADER & NAVIGATION
@@ -40,16 +48,21 @@
 
             </a>
 
-            <p class="brand-name">KWA OLGA</p>
-
-            <p>Car Wash & Lifestyle Lounge</p>
+            <div class="logo-copy">
+                <p class="brand-name">KWA OLGA</p>
+                <p>Car Wash &amp; Lifestyle Lounge</p>
+            </div>
 
         </div>
 
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         <!-- Main Navigation -->
-
-        <nav>
+        <nav id="site-navigation" aria-label="Main navigation">
 
             <ul>
 
@@ -63,10 +76,6 @@
 
                 <li>
                     <a href="menu.html">Services & Menu</a>
-                </li>
-
-                <li>
-                    <a href="menu.html">Menu</a>
                 </li>
 
                 <li>
@@ -110,27 +119,38 @@
         ========================== -->
 
         <section class="gallery-intro page-hero">
-            <p>KWA OLGA EXPERIENCE</p>
+            <p class="eyebrow">Kwa Olga experience</p>
             <h1>Moments at Kwa Olga</h1>
             <p>Impeccable car care, crafted drinks and the pleasure of lingering a little longer.</p>
         </section>
 
         <!-- An open-edged image mosaic brings together the wash and lounge. -->
         <section class="gallery-section" aria-label="Kwa Olga gallery">
+            <div class="gallery-toolbar">
+                <p class="eyebrow">A closer look</p>
+                <h2>Find your moment</h2>
+                <div class="gallery-filters" role="group" aria-label="Filter gallery photos">
+                    <button type="button" data-gallery-filter="all" aria-pressed="true">All photos</button>
+                    <button type="button" data-gallery-filter="car-care" aria-pressed="false">Car care</button>
+                    <button type="button" data-gallery-filter="food" aria-pressed="false">Food</button>
+                    <button type="button" data-gallery-filter="drinks" aria-pressed="false">Drinks</button>
+                </div>
+                <p class="gallery-filter-status visually-hidden" role="status" aria-live="polite"></p>
+            </div>
             <div class="gallery">
-                <figure class="gallery-tile gallery-tile--feature">
+                <figure class="gallery-tile gallery-tile--feature" data-category="car-care">
                     <img src="images/lorenzo-hamers-A9NU9_PvJIw-unsplash.jpg" width="1600" height="1067" alt="A dark luxury car receiving a careful exterior wash" loading="lazy">
                     <figcaption>Precision car care</figcaption>
                 </figure>
-                <figure class="gallery-tile gallery-tile--tall">
+                <figure class="gallery-tile gallery-tile--tall" data-category="car-care">
                     <img src="images/muhammad-saad-_vmBjTG5L1g-unsplash.jpg" width="1600" height="1067" alt="A freshly cleaned vehicle gleaming under the lights" loading="lazy">
                     <figcaption>Fresh from the wash</figcaption>
                 </figure>
-                <figure class="gallery-tile gallery-tile--food">
+                <figure class="gallery-tile gallery-tile--food" data-category="food">
                     <img src="images/chantal-lim-3xujHCBSTKw-unsplash.jpg" width="1600" height="1067" alt="A shared food platter prepared for a relaxed lounge visit" loading="lazy">
                     <figcaption>Made for sharing</figcaption>
                 </figure>
-                <figure class="gallery-tile gallery-tile--drinks">
+                <figure class="gallery-tile gallery-tile--drinks" data-category="drinks">
                     <img src="images/ash-edmonds-fsI-_MRsic0-unsplash.jpg" width="1600" height="1067" alt="A golden cocktail served over ice at a warmly lit lounge bar" loading="lazy">
                     <figcaption>Good pours, good company</figcaption>
                 </figure>
@@ -161,6 +181,7 @@
 
     </main>
 
+    <p class="visually-hidden video-status" role="status" aria-live="polite"></p>
 
     <!-- =========================
          FOOTER

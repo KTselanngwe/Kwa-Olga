@@ -5,215 +5,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover Kwa Olga Car Wash & Lifestyle Lounge in Meadowlands, Soweto: premium vehicle care, food, drinks, events and bookings.">
+    <meta name="theme-color" content="#111111">
 
     <title>Kwa Olga | Premium Car Wash & Lifestyle Lounge</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg-car.css">
+    <script src="js/data.js" defer></script>
+    <script src="js/bg-car.js" defer></script>
+    <script src="js/main.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 
-<body class="home-page">
+<body class="home-page" data-car="home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="Kwa Olga home">
+            <img src="images/logo.jpeg" alt="" width="120" height="80">
+            <span class="logo-copy">
+                <span class="brand-name">Kwa Olga</span>
+                <span>Car Wash &amp; Lifestyle Lounge</span>
+            </span>
+        </a>
 
-    <header>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.jpeg" alt="Stylized Kwa Olga logo with large red KO letters above a sleek black car and water splash accents, with the text Kwa Olga Car Wash & Lifestyle Lounge" width="120" >
-            </a>
-            <p class="brand-name">Kwa Olga</p>
-            <p>Car Wash & Lifestyle Lounge</p>
-        </div>
-
-        <nav>
-
+        <nav id="site-navigation" aria-label="Main navigation">
             <ul>
-
-                <li><a href="index.html">Home</a></li>
-
-                <li><a href="about.html">About Us</a></li>
-
-                <li><a href="menu.html">Services & Menu</a></li>
-
-                <li><a href="menu.html">Menu</a></li>
-
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Services &amp; Menu</a></li>
+                <li><a href="events.html">Specials &amp; Events</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-
-                <li><a href="events.html">Events</a></li>
-
-                <li><a href="bookings.html">Bookings</a></li>
-
-                <li><a href="contact.html">Contact Us</a></li>
-
-                <li><a href="location.html">Location</a></li>
-
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="location.html">Find Us</a></li>
+                <li><a class="nav-booking" href="bookings.html">Book Now</a></li>
                 <li><a href="register.html">Register</a></li>
-
             </ul>
-
         </nav>
-
     </header>
 
-    <!-- ================= MAIN ================= -->
-
-    <main>
-
-        <!-- Hero Section -->
-
-        <section class="hero page-intro">
-
-            <h1>Welcome to Kwa Olga</h1>
-
-            <p>
-                Experience more than just a car wash. Kwa Olga combines premium
-                vehicle cleaning services with a modern lifestyle lounge where
-                adults can relax, enjoy refreshments, and socialise while their
-                vehicles receive professional care.
-            </p>
-
-            <a href="menu.html">Explore Our Services</a>
-
-        </section>
-
-        <!-- About Preview -->
-
-        <section>
-
-            <h2>Who are we?</h2>
-
-            <p>
-                Located in Meadowlands, Soweto, Kwa Olga is a modern car wash and
-                lifestyle destination inspired by South African kasi culture.
-                Opening on 30 November 2026, our goal is to provide exceptional
-                vehicle care in a vibrant and welcoming environment.
-            </p>
-
-            <a href="about.html">Learn More</a>
-
-        </section>
-
-        <!-- Services Preview -->
-
-        <section>
-
-            <h2>Our Services</h2>
-
-            <article>
-
-                <h3>Exterior Wash</h3>
-
-                <p>
-                    Professional exterior cleaning to keep your vehicle looking its best.
+    <main id="main-content">
+        <section class="hero home-hero">
+            <div class="hero-content reveal">
+                <p class="eyebrow">Meadowlands, Soweto</p>
+                <h1>Welcome to Kwa Olga</h1>
+                <p class="hero-lead">
+                    Premium car care, good food and a place to unwind. Make your next
+                    wash part of a better day out.
                 </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="bookings.html">Book your visit</a>
+                    <a class="button button-secondary" href="menu.html">Explore services &amp; menu</a>
+                </div>
+                <p class="opening-note">Opening 30 November 2026</p>
+            </div>
+            <a class="scroll-cue" href="#welcome" aria-label="Scroll to discover Kwa Olga">Discover <span aria-hidden="true">↓</span></a>
+        </section>
 
+        <section class="home-highlights reveal" aria-label="The Kwa Olga experience">
+            <article class="highlight-card">
+                <span class="highlight-number" aria-hidden="true">01</span>
+                <h2>Professional car care</h2>
+                <p>From an exterior wash to a complete vehicle detail, explore a service to suit your car.</p>
             </article>
+            <article class="highlight-card">
+                <span class="highlight-number" aria-hidden="true">02</span>
+                <h2>A place to unwind</h2>
+                <p>Settle into the lounge and enjoy food, drinks and a relaxed atmosphere while you visit.</p>
+            </article>
+            <article class="highlight-card">
+                <span class="highlight-number" aria-hidden="true">03</span>
+                <h2>Made for Meadowlands</h2>
+                <p>Find Kwa Olga in Meadowlands, Soweto, and come experience a local car-care destination.</p>
+            </article>
+        </section>
 
-            <article>
-
-                <h3>Valet Service</h3>
-
+        <section id="welcome" class="home-story reveal">
+            <div class="section-heading">
+                <p class="eyebrow">More than a car wash</p>
+                <h2>Your car gets cared for. You get time to relax.</h2>
+            </div>
+            <div class="story-copy">
                 <p>
-                    Complete interior and exterior vehicle cleaning.
+                    Kwa Olga brings professional vehicle care together with a welcoming
+                    lifestyle lounge. Whether you are stopping by for a wash, a meal or
+                    time with friends, we look forward to welcoming you.
                 </p>
+                <a class="text-link" href="about.html">Get to know Kwa Olga <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
 
-            </article>
+        <section class="home-packages reveal" aria-labelledby="packages-heading">
+            <div class="section-heading">
+                <p class="eyebrow">Vehicle care</p>
+                <h2 id="packages-heading">Choose your wash</h2>
+                <p>Explore the available car-wash and detailing packages.</p>
+            </div>
+            <div id="home-package-grid" class="package-grid">
+                <article class="package-card">
+                    <h3>Executive Clean</h3>
+                    <p class="package-price">R280</p>
+                    <a href="bookings.html">Request this service</a>
+                </article>
+                <article class="package-card">
+                    <h3>Premium Detail</h3>
+                    <p class="package-price">R350</p>
+                    <a href="bookings.html">Request this service</a>
+                </article>
+                <article class="package-card">
+                    <h3>Full Vehicle Detail</h3>
+                    <p class="package-price">R500</p>
+                    <a href="bookings.html">Request this service</a>
+                </article>
+                <article class="package-card">
+                    <h3>Premium Full Detail</h3>
+                    <p class="package-price">R800</p>
+                    <a href="bookings.html">Request this service</a>
+                </article>
+                <article class="package-card">
+                    <h3>The Kwa Olga Experience</h3>
+                    <p class="package-price">R800</p>
+                    <a href="bookings.html">Request this service</a>
+                </article>
+            </div>
+            <a class="button button-primary" href="bookings.html">See booking options</a>
+        </section>
 
-
-            <article>
-
-                <h3>Deep Clean & Detailing</h3>
-
+        <section class="home-lounge reveal">
+            <div class="lounge-image">
+                <img src="images/ash-edmonds-fsI-_MRsic0-unsplash.jpg" alt="A cocktail served over ice in a warmly lit lounge" width="1600" height="1067" loading="lazy">
+            </div>
+            <div class="lounge-copy">
+                <p class="eyebrow">The lifestyle lounge</p>
+                <h2>Stay for the good company</h2>
                 <p>
-                    Premium detailing services designed to restore your vehicle's appearance.
+                    Make yourself comfortable with a selection of food and drinks in
+                    the Kwa Olga lounge. Take a look at the menu before your visit.
                 </p>
-
-            </article>
-
+                <a class="button button-secondary" href="menu.html">View the menu</a>
+                <p class="age-note">Lounge entry is for guests aged 21 and over.</p>
+            </div>
         </section>
 
-        <!-- Weekly Specials -->
-
-        <section>
-
-            <h2>Weekly Specials</h2>
-
-            <p>
-                Visit our Specials & Events page to discover discounted car wash
-                packages, entertainment events, and exclusive weekend promotions.
-            </p>
-
-            <a href="events.html">View Specials</a>
-
+        <section class="home-events reveal">
+            <div>
+                <p class="eyebrow">Good times ahead</p>
+                <h2>Make a day of it</h2>
+                <p>Keep up with the latest specials and events at Kwa Olga.</p>
+            </div>
+            <a class="button button-secondary" href="events.html">See what's happening</a>
         </section>
 
-        <!-- Why Choose Us -->
-
-        <section>
-
-            <h2>Why Should You Choose  Kwa Olga?</h2>
-
-            <ul>
-
-                <li>Professional vehicle cleaning services</li>
-
-                <li>Modern lifestyle lounge</li>
-
-                <li>Safe adults-only environment (21+)</li>
-
-                <li>Affordable service packages</li>
-
-                <li>Friendly and professional staff</li>
-
-                <li>Convenient location in Meadowlands, Soweto</li>
-
-            </ul>
-
+        <section class="home-cta reveal">
+            <p class="eyebrow">Opening 30 November 2026</p>
+            <h2>Come experience Kwa Olga</h2>
+            <p>Plan your visit to Meadowlands, Soweto.</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="bookings.html">Book now</a>
+                <a class="button button-secondary" href="contact.html">Get in touch</a>
+            </div>
         </section>
-
-        <!-- Call to Action -->
-
-        <section>
-
-            <h2>Book Your Car Wash Today</h2>
-
-            <p>
-                Ready to experience premium vehicle care? Book your service and
-                enjoy the Kwa Olga lifestyle.
-            </p>
-
-            <a href="bookings.html">Book Now</a>
-
-            <button type="button" id="visit-alert-button">Visit information</button>
-
-        </section>
-
     </main>
 
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <h3>Kwa Olga</h3>
-
-        <p>Premium Car Wash & Lifestyle Lounge</p>
-
-        <p>Meadowlands, Soweto</p>
-
-        <p>Opening Date: 30 November 2026</p>
-
-        <p>Adults Only (21+)</p>
-
-        <p>Email: info@kwaolga.co.za</p>
-
-        <p>Phone: +27 XX XXX XXXX</p>
-
-        <p>&copy; 2026 Kwa Olga. All Rights Reserved.ST10505914</p>
-
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <h2>Kwa Olga</h2>
+                <p>Car Wash &amp; Lifestyle Lounge</p>
+                <p>Meadowlands, Soweto</p>
+            </div>
+            <div class="footer-links">
+                <h2>Explore</h2>
+                <a href="about.html">About</a>
+                <a href="menu.html">Services &amp; Menu</a>
+                <a href="events.html">Specials &amp; Events</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div class="footer-links">
+                <h2>Plan your visit</h2>
+                <a href="bookings.html">Bookings</a>
+                <a href="location.html">Find us</a>
+                <a href="contact.html">Contact</a>
+                <a href="mailto:info@kwaolga.co.za">info@kwaolga.co.za</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2026</span> Kwa Olga. All rights reserved.</p>
+            <a href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
     </footer>
-
 </body>
 
 </html>

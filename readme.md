@@ -56,9 +56,15 @@ This included:
 - Testing and validating the website.
 
 ### Part 3
-Part 3 adds a shared JavaScript implementation in `js/script.js` for accessible gallery lightboxes, section search, client-side form validation, registration password checks, a click-triggered alert, and interactive Leaflet maps. The bookings and gallery pages use the supplied WhatsApp video as a desktop background, with a static image fallback on mobile and for reduced-motion preferences.
+Part 3 adds a shared JavaScript implementation in `js/script.js` for accessible gallery lightboxes, section search, client-side form validation, registration password checks, a click-triggered alert, and interactive Leaflet maps.
 
 The project uses **HTML5, CSS3 and JavaScript**. Forms are demonstration-only and do not send or store data.
+
+The home page foundation also uses `js/data.js` for confirmed business details and package prices and `js/main.js` for the home page navigation, package cards, current copyright year and scroll-reveal behavior. The package prices match the existing booking form. The listed Meadowlands coordinates are approximate; the exact street address, phone/WhatsApp number and opening hours still need confirmation. Customer reviews and business performance figures have not been invented.
+
+The gallery and booking pages have a cinematic video background without a creator-handle badge. To enable it, add your own muted, 720p MP4 under 5 MB, with no audio track, at `videos/kwa-olga-tiktok.mp4`. A starter poster copied from the existing project photography is at `images/video-poster.jpg`; replace it with a representative still if desired. Use VS Code Live Server or an HTTP static host to play the video; direct `file://` previews use the poster instead. The background pauses when the tab is hidden and falls back to the poster for reduced-motion preferences, data-saving mode or an unavailable video. Gallery photos can be filtered and opened in a keyboard-accessible lightbox, and the car-wash form includes a live package/date summary.
+
+All nine pages include the shared background-car component in `js/bg-car.js` and `css/bg-car.css`. Add a properly licensed, optimized car model (under 5 MB recommended) at `models/car.glb`, a transparent fallback at `images/car.png`, and a model loading poster at `images/car-poster.png`. The component lazily loads Google `<model-viewer>` version 4.0.0, applies per-page camera presets from each page's `data-car` value, follows scroll motion, and falls back to the existing vehicle photo if the model or WebGL is unavailable. The persistent pause button remembers its preference in local storage. Camera presets and paint colors are near the top of `js/bg-car.js`; page scale and placement presets are in `css/bg-car.css`.
 
 ---
 
@@ -692,6 +698,3 @@ The external CSS stylesheet, desktop styling, responsive design, responsive navi
 The current version contains the complete HTML5 and CSS3 development for the Kwa Olga Car Wash & Lifestyle Lounge website.
 
 ---
-
-
-

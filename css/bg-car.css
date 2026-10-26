@@ -1,0 +1,235 @@
+:root {
+    --bg-car-accent: #C00000;
+    --bg-car-cream: #F7F5F2;
+}
+
+body {
+    isolation: isolate;
+}
+
+.bg-car {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse at 50% 78%, rgba(255, 255, 255, 0.07), transparent 35%),
+        linear-gradient(180deg, rgba(4, 5, 6, 0.18), rgba(4, 5, 6, 0.3));
+}
+
+.bg-car-model,
+.bg-car-model model-viewer,
+.bg-car-fallback,
+.bg-car-glow,
+.bg-car-vignette {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-car-model {
+    z-index: 1;
+    opacity: 0;
+    transform: translate3d(var(--bg-car-shift, 0), 3vh, 0) scale(var(--bg-car-scale, 1));
+    transition: opacity 700ms ease;
+}
+
+.bg-car-model model-viewer {
+    --poster-color: transparent;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.bg-car-fallback {
+    z-index: 0;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    object-position: center 68%;
+    opacity: 0;
+    filter: brightness(0.66) saturate(0.78) contrast(1.08);
+    transform: translate3d(calc(var(--bg-car-shift, 0px) + var(--bg-car-fallback-x, 0px)), calc(3vh + var(--bg-car-fallback-y, 0px)), 0) scale(var(--bg-car-scale, 1));
+    transition: opacity 600ms ease;
+}
+
+.bg-car-glow {
+    z-index: 0;
+    inset: auto 8% 8%;
+    height: 22%;
+    background: radial-gradient(ellipse, rgba(255, 255, 255, 0.12), rgba(192, 0, 0, 0.08) 34%, transparent 72%);
+    filter: blur(22px);
+}
+
+.bg-car-vignette {
+    z-index: 2;
+    background:
+        linear-gradient(180deg, rgba(5, 6, 7, 0.26), transparent 30%, rgba(5, 6, 7, 0.58)),
+        radial-gradient(ellipse at center, transparent 35%, rgba(5, 6, 7, 0.35) 100%);
+}
+
+.bg-car-fallback-active .bg-car-fallback {
+    opacity: 0.36;
+}
+
+.bg-car-model-active .bg-car-model {
+    opacity: 0.58;
+}
+
+.bg-car-paused .bg-car-model,
+.bg-car-paused .bg-car-fallback {
+    transition: none;
+}
+
+.bg-car-pause {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 30;
+    min-height: 42px;
+    padding: 9px 15px;
+    background: rgba(15, 16, 17, 0.78);
+    border: 1px solid rgba(247, 245, 242, 0.32);
+    border-radius: 999px;
+    color: var(--bg-car-cream);
+    cursor: pointer;
+    font: 600 0.75rem/1.2 Inter, Arial, sans-serif;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.bg-car-pause:hover,
+.bg-car-pause:focus-visible {
+    background: rgba(192, 0, 0, 0.86);
+    border-color: rgba(255, 255, 255, 0.65);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.bg-car-paint-picker {
+    position: fixed;
+    bottom: 21px;
+    left: 20px;
+    z-index: 30;
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    gap: 7px;
+    background: rgba(15, 16, 17, 0.78);
+    border: 1px solid rgba(247, 245, 242, 0.24);
+    border-radius: 999px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.bg-car-swatch {
+    display: block;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    background: var(--swatch-color);
+    border: 2px solid rgba(255, 255, 255, 0.72);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.bg-car-swatch[aria-pressed="true"] {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+.bg-car-swatch:focus-visible,
+.bg-car-pause:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+.bg-car-status {
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+body[data-car="home"] {
+    --bg-car-scale: 1.22;
+    --bg-car-shift: 2vw;
+}
+
+body[data-car="about"] {
+    --bg-car-scale: 1.04;
+    --bg-car-shift: -14vw;
+}
+
+body[data-car="services"] {
+    --bg-car-scale: 1.12;
+    --bg-car-shift: 0;
+}
+
+body[data-car="menu"] {
+    --bg-car-scale: 0.9;
+    --bg-car-shift: 18vw;
+}
+
+body[data-car="specials"] {
+    --bg-car-scale: 0.98;
+    --bg-car-shift: -9vw;
+}
+
+body[data-car="gallery"] {
+    --bg-car-scale: 0.98;
+    --bg-car-shift: 0;
+}
+
+body[data-car="contact"] {
+    --bg-car-scale: 0.78;
+    --bg-car-shift: 25vw;
+}
+
+body[data-car="booking"] {
+    --bg-car-scale: 0.94;
+    --bg-car-shift: -2vw;
+}
+
+body[data-car="register"] {
+    --bg-car-scale: 0.84;
+    --bg-car-shift: 20vw;
+}
+
+@media (max-width: 768px) {
+    .bg-car-model,
+    .bg-car-fallback {
+        transform: translate3d(var(--bg-car-fallback-x, 0px), calc(4vh + var(--bg-car-fallback-y, 0px)), 0) scale(0.78);
+    }
+
+    .bg-car-model-active .bg-car-model {
+        opacity: 0.4;
+    }
+
+    .bg-car-fallback-active .bg-car-fallback {
+        opacity: 0.25;
+    }
+
+    .bg-car-pause {
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .bg-car-paint-picker {
+        bottom: 12px;
+        left: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bg-car-model,
+    .bg-car-fallback,
+    .bg-car-pause {
+        transition: none !important;
+    }
+}

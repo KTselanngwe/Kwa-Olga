@@ -9,6 +9,8 @@
     <meta name="description" content="Request a premium car wash, detailing or table booking at Kwa Olga Car Wash & Lifestyle Lounge in Meadowlands, Soweto.">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg-car.css">
+    <script src="js/bg-car.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
     <script src="js/script.js" defer></script>
@@ -17,11 +19,11 @@
 
 </head>
 
-<body class="bookings-page">
+<body class="bookings-page" data-car="booking">
 
     <div class="video-stage" aria-hidden="true">
-        <video class="video-background" autoplay muted loop playsinline preload="auto" poster="images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg">
-            <source src="videos/WhatsApp Video 2026-10-19 at 10.37.24.mp4" type="video/mp4">
+        <video id="cinematic-background" class="video-background" autoplay muted loop playsinline preload="metadata" poster="images/video-poster.jpg" aria-hidden="true" tabindex="-1">
+            <source data-src="videos/kwa-olga-tiktok.mp4" type="video/mp4">
         </video>
         <div class="video-shade"></div>
     </div>
@@ -38,14 +40,20 @@
                      width="120">
             </a>
 
-            <p class="brand-name">KWA OLGA</p>
-
-            <p>Car Wash & Lifestyle Lounge</p>
+            <div class="logo-copy">
+                <p class="brand-name">KWA OLGA</p>
+                <p>Car Wash &amp; Lifestyle Lounge</p>
+            </div>
 
         </div>
 
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-        <nav>
+        <nav id="site-navigation" aria-label="Main navigation">
 
             <ul>
 
@@ -59,10 +67,6 @@
 
                 <li>
                     <a href="menu.html">Services & Menu</a>
-                </li>
-
-                <li>
-                    <a href="menu.html">Menu</a>
                 </li>
 
                 <li>
@@ -132,6 +136,14 @@
                 packages for a complete vehicle care experience.
             </p>
 
+
+            <aside class="booking-summary" aria-live="polite" aria-atomic="true">
+                <p class="eyebrow">Your visit</p>
+                <h3>Booking summary</h3>
+                <p><span>Service</span><strong id="booking-summary-package">Choose a wash package</strong></p>
+                <p><span>Estimated price</span><strong id="booking-summary-price">—</strong></p>
+                <p><span>Preferred date</span><strong id="booking-summary-date">Not selected</strong></p>
+            </aside>
 
             <form data-local-form data-form-type="booking">
 
@@ -605,6 +617,7 @@
 
     </main>
 
+    <p class="visually-hidden video-status" role="status" aria-live="polite"></p>
 
     <!-- =========================
          FOOTER
