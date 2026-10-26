@@ -56,7 +56,7 @@ This included:
 - Testing and validating the website.
 
 ### Part 3
-Part 3 adds a shared JavaScript implementation in `js/script.js` for accessible gallery lightboxes, section search, client-side form validation, registration password checks, a click-triggered alert, and interactive Leaflet maps.
+Part 3 adds shared JavaScript implementations for accessible gallery lightboxes, section search, client-side form validation, registration password checks, a click-triggered alert, and interactive Google Maps.
 
 The project uses **HTML5, CSS3 and JavaScript**. Forms are demonstration-only and do not send or store data.
 
@@ -65,6 +65,20 @@ The home page foundation also uses `js/data.js` for confirmed business details a
 The gallery and booking pages have a cinematic video background without a creator-handle badge. To enable it, add your own muted, 720p MP4 under 5 MB, with no audio track, at `videos/kwa-olga-tiktok.mp4`. A starter poster copied from the existing project photography is at `images/video-poster.jpg`; replace it with a representative still if desired. Use VS Code Live Server or an HTTP static host to play the video; direct `file://` previews use the poster instead. The background pauses when the tab is hidden and falls back to the poster for reduced-motion preferences, data-saving mode or an unavailable video. Gallery photos can be filtered and opened in a keyboard-accessible lightbox, and the car-wash form includes a live package/date summary.
 
 All nine pages include the shared background-car component in `js/bg-car.js` and `css/bg-car.css`. Add a properly licensed, optimized car model (under 5 MB recommended) at `models/car.glb`, a transparent fallback at `images/car.png`, and a model loading poster at `images/car-poster.png`. The component lazily loads Google `<model-viewer>` version 4.0.0, applies per-page camera presets from each page's `data-car` value, follows scroll motion, and falls back to the existing vehicle photo if the model or WebGL is unavailable. The persistent pause button remembers its preference in local storage. Camera presets and paint colors are near the top of `js/bg-car.js`; page scale and placement presets are in `css/bg-car.css`.
+
+### Google Maps setup
+
+The Contact, Location and Bookings pages use the shared `js/map.js` loader. The map marker coordinates are approximate; update them only after confirming Kwa Olga's exact pin.
+
+1. Open the [Google Cloud Console](https://console.cloud.google.com/), create or select a project, and attach a billing account.
+2. In **APIs & Services → Library**, enable **Maps JavaScript API**.
+3. In **APIs & Services → Credentials**, create an API key. In **Key restrictions**, choose **Websites (HTTP referrers)** and allow your production origins, for example `https://your-domain.example/*` and `https://www.your-domain.example/*`, plus the local patterns `http://localhost:*/*` and `http://127.0.0.1:*/*`.
+4. Under **API restrictions**, restrict this key to **Maps JavaScript API**. Do not publish an unrestricted key.
+5. In `js/map.js`, replace `YOUR_API_KEY_HERE` in `GOOGLE_MAPS_API_KEY` with the key. Replace the `lat` and `lng` values in `KWA_OLGA_COORDINATES` with the verified latitude and longitude. The Advanced Marker uses `DEMO_MAP_ID` for initial setup; replace `GOOGLE_MAP_ID` with your own Google Maps Map ID if you have one.
+6. Set a Google Cloud budget and create a budget alert that emails you as spend approaches your chosen thresholds. Budget alerts notify you; they do not automatically cap API usage.
+7. Run the site through VS Code Live Server at `http://127.0.0.1:5500` (or another allowed HTTP origin). Do not open the pages through `file://`; browser referrer restrictions and API loading require an HTTP origin.
+
+When the API key is absent or the JavaScript API fails, the pages show a keyless Google Maps embed; if the embed also fails, an accessible address card and directions link are displayed. The embed is generated from the coordinates. For a verified business listing, you can replace the generated embed URL in `js/map.js` with the specific iframe URL copied from Google Maps **Share → Embed a map**.
 
 ---
 
@@ -168,7 +182,7 @@ The website includes:
 - Responsive desktop, tablet and mobile layouts.
 - External CSS stylesheet.
 - Shared JavaScript interactions and accessible form feedback.
-- Interactive OpenStreetMap maps with Leaflet.
+- Interactive Google Maps with a keyless embed and address-card fallback.
 - Responsive video backgrounds on bookings and gallery pages.
 - Section search and gallery lightbox.
 

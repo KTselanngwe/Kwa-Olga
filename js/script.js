@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.classList.add('js');
     const header = document.querySelector('header');
     const galleryImages = document.querySelectorAll('.gallery img');
-    const mapElement = document.querySelector('#business-map');
     const cinematicVideo = document.querySelector('.video-background');
     const videoStatus = document.querySelector('.video-status');
 
@@ -615,36 +614,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-
-    // Initialize the map only after the deferred Leaflet library is available.
-    if (mapElement && window.L) {
-        const latitude = Number(mapElement.dataset.latitude);
-        const longitude = Number(mapElement.dataset.longitude);
-        const mapStatus = document.querySelector('#map-status');
-
-        if (Number.isFinite(latitude) && Number.isFinite(longitude)) {
-            const map = window.L.map(mapElement).setView([latitude, longitude], 15);
-            window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
-
-            window.L.marker([latitude, longitude]).addTo(map)
-                .bindPopup('Kwa Olga Car Wash &amp; Lifestyle Lounge<br>Approximate Meadowlands location')
-                .openPopup();
-
-            map.on('click', function (event) {
-                if (mapStatus) {
-                    mapStatus.textContent = 'Selected coordinates: ' + event.latlng.lat.toFixed(6) + ', ' + event.latlng.lng.toFixed(6);
-                }
-            });
-        }
-    } else if (mapElement) {
-        const mapStatus = document.querySelector('#map-status');
-        if (mapStatus) {
-            mapStatus.textContent = 'The interactive map could not load. Check your internet connection and reload the page.';
-        }
-    }
 
     // The button gives visitors a useful prompt only after an intentional click.
     const visitAlertButton = document.querySelector('#visit-alert-button');

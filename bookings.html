@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bg-car.css">
     <script src="js/bg-car.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
     <script src="js/script.js" defer></script>
+    <script src="js/map.js" defer></script>
 
     <title>Kwa Olga | Bookings</title>
 
@@ -563,9 +562,11 @@
 
         <section class="location-map">
             <h2>Find Kwa Olga</h2>
-            <p>The marker shows an approximate Meadowlands location. Tap or click the map to read coordinates.</p>
-            <div id="business-map" data-latitude="-26.2207" data-longitude="27.9058" aria-label="Interactive map showing the approximate Kwa Olga location in Meadowlands, Soweto"></div>
-            <p id="map-status" role="status" aria-live="polite">Map marker is approximate; confirm the exact pin before travelling.</p>
+            <p>Kwa Olga Car Wash &amp; Lifestyle Lounge · Meadowlands, Soweto (exact street address to be confirmed).</p>
+            <div id="business-map" aria-label="Interactive Google Map showing the approximate Kwa Olga location in Meadowlands, Soweto" role="region"></div>
+            <p class="map-notice">Map marker is approximate; confirm the exact pin before travelling.</p>
+            <p id="map-status" role="status" aria-live="polite">Drag to explore, or click or tap the map to read coordinates.</p>
+            <div id="map-fallback" class="map-fallback" hidden></div>
         </section>
 
 

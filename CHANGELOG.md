@@ -14,7 +14,7 @@ This changelog records the development and updates made to the Kwa Olga website 
 - Added page-section search with empty, no-result and clear states.
 - Added client-side validation and live feedback for bookings, enquiries and registration.
 - Added a registration page with minimum password length and matching confirmation checks.
-- Added Leaflet 1.9.4 maps with OpenStreetMap attribution on location, contact and bookings pages.
+- Added interactive maps on the location, contact and bookings pages.
 - Added the supplied WhatsApp MP4 as a bookings and gallery background with a static fallback.
 - Added unique page descriptions, one content h1 per page and the shared deferred script.
 
@@ -241,7 +241,7 @@ The following improvements were implemented during Part 2:
 - Navigation Updated
 - JavaScript Implemented in `js/script.js`
 - Registration Page Added
-- Leaflet Maps and OpenStreetMap Implemented
+- Google Maps integration and graceful fallbacks implemented
 - README Updated
 - CHANGELOG Updated
 - GitHub Repository Updated
