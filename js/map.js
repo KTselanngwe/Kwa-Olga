@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fallbackStarted = true;
         console.warn('Kwa Olga map fallback active: using the keyless Google Maps embed. ' + reason);
         mapElement.hidden = true;
+        fallbackContainer.hidden = false;
         fallbackContainer.replaceChildren();
 
         const iframe = document.createElement('iframe');
@@ -119,6 +120,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (fallbackStarted) {
                 return;
             }
+            fallbackContainer.hidden = true;
+            mapElement.hidden = false;
             const mapsLibrary = libraries[0];
             const markerLibrary = libraries[1];
             const map = new mapsLibrary.Map(mapElement, {
@@ -166,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    window.initKwaOlgaGoogleMap = initializeMap;
+    window.initMap = initializeMap;
     window.gm_authFailure = function () {
         showEmbedFallback('Google rejected the API key or its billing/API restrictions.');
     };
@@ -184,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const apiScript = document.createElement('script');
     apiScript.src = 'https://maps.googleapis.com/maps/api/js?key='
         + encodeURIComponent(GOOGLE_MAPS_API_KEY)
-        + '&loading=async&callback=initKwaOlgaGoogleMap&v=weekly';
+        + '&loading=async&callback=initMap&v=weekly';
     apiScript.async = true;
     apiScript.defer = true;
     apiScript.onerror = function () {
@@ -193,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.head.append(apiScript);
     fallbackTimer = window.setTimeout(function () {
         if (!mapInitialized) {
-            showEmbedFallback('The Google Maps JavaScript API callback did not run within 15 seconds.');
+            showEmbedFallback('The Google Maps JavaScript API callback did not run within 5 seconds.');
         }
-    }, 15000);
+    }, 5000);
 });

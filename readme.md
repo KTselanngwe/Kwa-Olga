@@ -1,282 +1,62 @@
 # Kwa Olga Car Wash & Lifestyle Lounge
-
-
----
-
-## Project Information
-Student:Keabetswe Tselanngwe
-
-Student Number:ST10505914
-
-Module:WEDE5020 – Web Development
-
-Lecturer:Mrs C Nukeri
-
----
+**Module:** WEDE5020 – Web Development
+**Student:** Keabetswe Tselanngwe
+**Student Number:** ST10505914
+**Lecturer:** Mrs C Nukeri
+**Academic Year:** 2026
 
 ## Project Overview
-Kwa Olga Car Wash & Lifestyle Lounge is a website designed to provide customers with information about a car wash and lifestyle lounge business.
+Kwa Olga Car Wash & Lifestyle Lounge is a multi-page website designed to provide customers with information about the business, its services, food and drinks menu, events, gallery, booking options, contact details and location.
 
-The website was developed across **Part 1 and Part 2** of the WEDE5020 project.
+The project was developed in three parts:
 
-### Part 1
-Part 1 focused on developing the foundation of the website using **HTML5**. This included:
+- **Part 1:** HTML5 website structure and content.
+- **Part 2:** CSS3 styling and responsive design.
+- **Part 3:** JavaScript functionality and interactivity.
 
-- Planning the website structure.
-- Creating the website pages.
-- Creating the navigation.
-- Adding business content.
-- Adding images.
-- Creating the menu.
-- Creating the events and specials section.
-- Creating the gallery.
-- Creating the booking page and form.
-- Creating the contact page and form.
-- Creating the location page.
-- Creating internal page links.
+## Website Purpose and Target Audience
+The purpose of the website is to establish an online presence for Kwa Olga Car Wash & Lifestyle Lounge and make important business information accessible to customers.
 
-### Part 2
-Part 2 focused on improving the website using **CSS3** and implementing responsive design.
+The website is intended for existing and potential customers, including people looking for car-wash services, food and drinks, events and specials, photographs, booking information or location details.
 
-This included:
+## Website Pages
+PageFilePurposeHome`index.html`Introduces the business and provides links to key sections.About Us`about.html`Presents information about Kwa Olga.Menu`menu.html`Displays food and drink offerings.Events`events.html`Presents events, specials and related information.Gallery`gallery.html`Displays photographs and provides gallery interactions.Bookings`bookings.html`Provides booking information and a booking form with a summary.Contact`contact.html`Provides contact information and a contact form.Location`location.html`Provides location information and map functionality.Registration`register.html`Demonstrates client-side registration and password validation.
+## Part 1 – HTML5 Development
+Part 1 established the website structure and content using HTML5. The website was divided into separate pages so visitors could navigate the business information more easily.
 
-- Creating an external CSS stylesheet.
-- Applying consistent styling across all pages.
-- Improving typography.
-- Improving page layout.
-- Implementing Flexbox.
-- Implementing CSS Grid.
-- Adding CSS pseudo-classes.
-- Adding responsive media queries.
-- Creating responsive navigation.
-- Making images responsive.
-- Improving the desktop, tablet and mobile layouts.
-- Implementing changes based on Part 1 feedback.
-- Updating the README and CHANGELOG.
-- Testing and validating the website.
+Semantic HTML5 elements used across the project include:
 
-### Part 3
-Part 3 adds shared JavaScript implementations for accessible gallery lightboxes, section search, client-side form validation, registration password checks, a click-triggered alert, and interactive Google Maps.
+- `header`
+- `nav`
+- `main`
+- `section`
+- `article`
+- `footer`
+- `form`
+- `label`
+- `input`
+- `select`
+- `textarea`
+- `figure`
+- `figcaption`
+The initial development included the navigation, business content, logo and images, menu, events and specials, gallery, booking form, contact form, location information and internal links between pages.
 
-The project uses **HTML5, CSS3 and JavaScript**. Forms are demonstration-only and do not send or store data.
+## Part 2 – CSS3 Styling and Responsive Design
+Part 2 improved the presentation and usability of the website through the external stylesheet `css/style.css`. The stylesheet provides consistent styling across the website, including the header, navigation, hero sections, content, buttons, forms, gallery and footer.
 
-The home page foundation also uses `js/data.js` for confirmed business details and package prices and `js/main.js` for the home page navigation, package cards, current copyright year and scroll-reveal behavior. The package prices match the existing booking form. The listed Meadowlands coordinates are approximate; the exact street address, phone/WhatsApp number and opening hours still need confirmation. Customer reviews and business performance figures have not been invented.
+### CSS Defaults and Colour Scheme
+A universal CSS reset is used to create consistent spacing and sizing:
 
-The gallery and booking pages have a cinematic video background without a creator-handle badge. To enable it, add your own muted, 720p MP4 under 5 MB, with no audio track, at `videos/kwa-olga-tiktok.mp4`. A starter poster copied from the existing project photography is at `images/video-poster.jpg`; replace it with a representative still if desired. Use VS Code Live Server or an HTTP static host to play the video; direct `file://` previews use the poster instead. The background pauses when the tab is hidden and falls back to the poster for reduced-motion preferences, data-saving mode or an unavailable video. Gallery photos can be filtered and opened in a keyboard-accessible lightbox, and the car-wash form includes a live package/date summary.
-
-All nine pages include the shared background-car component in `js/bg-car.js` and `css/bg-car.css`. Add a properly licensed, optimized car model (under 5 MB recommended) at `models/car.glb`, a transparent fallback at `images/car.png`, and a model loading poster at `images/car-poster.png`. The component lazily loads Google `<model-viewer>` version 4.0.0, applies per-page camera presets from each page's `data-car` value, follows scroll motion, and falls back to the existing vehicle photo if the model or WebGL is unavailable. The persistent pause button remembers its preference in local storage. Camera presets and paint colors are near the top of `js/bg-car.js`; page scale and placement presets are in `css/bg-car.css`.
-
-### Google Maps setup
-
-The Contact, Location and Bookings pages use the shared `js/map.js` loader. The map marker coordinates are approximate; update them only after confirming Kwa Olga's exact pin.
-
-1. Open the [Google Cloud Console](https://console.cloud.google.com/), create or select a project, and attach a billing account.
-2. In **APIs & Services → Library**, enable **Maps JavaScript API**.
-3. In **APIs & Services → Credentials**, create an API key. In **Key restrictions**, choose **Websites (HTTP referrers)** and allow your production origins, for example `https://your-domain.example/*` and `https://www.your-domain.example/*`, plus the local patterns `http://localhost:*/*` and `http://127.0.0.1:*/*`.
-4. Under **API restrictions**, restrict this key to **Maps JavaScript API**. Do not publish an unrestricted key.
-5. In `js/map.js`, replace `YOUR_API_KEY_HERE` in `GOOGLE_MAPS_API_KEY` with the key. Replace the `lat` and `lng` values in `KWA_OLGA_COORDINATES` with the verified latitude and longitude. The Advanced Marker uses `DEMO_MAP_ID` for initial setup; replace `GOOGLE_MAP_ID` with your own Google Maps Map ID if you have one.
-6. Set a Google Cloud budget and create a budget alert that emails you as spend approaches your chosen thresholds. Budget alerts notify you; they do not automatically cap API usage.
-7. Run the site through VS Code Live Server at `http://127.0.0.1:5500` (or another allowed HTTP origin). Do not open the pages through `file://`; browser referrer restrictions and API loading require an HTTP origin.
-
-When the API key is absent or the JavaScript API fails, the pages show a keyless Google Maps embed; if the embed also fails, an accessible address card and directions link are displayed. The embed is generated from the coordinates. For a verified business listing, you can replace the generated embed URL in `js/map.js` with the specific iframe URL copied from Google Maps **Share → Embed a map**.
-
----
-
-# Website Purpose
-The purpose of the website is to provide an online presence for Kwa Olga Car Wash & Lifestyle Lounge and make important business information easily accessible to customers.
-
-The website allows visitors to:
-
-- Learn about Kwa Olga.
-- View available services and offerings.
-- View the food and drinks menu.
-- View events and specials.
-- View photographs in the gallery.
-- Access booking information.
-- Submit booking information.
-- Find contact information.
-- Find the business location.
-
----
-
-# Target Audience
-The website is intended for:
-
-- Existing Kwa Olga customers.
-- Potential new customers.
-- Customers looking for car wash services.
-- Customers interested in food and drinks.
-- Customers interested in events and specials.
-- Customers looking for a social and lifestyle environment.
-- Customers who need booking or contact information.
-
----
-
-# Website Pages
-The website consists of the following HTML pages:
-
-### Home
-`index.html`
-
-Introduces Kwa Olga Car Wash & Lifestyle Lounge and provides access to the main areas of the website.
-
-### About Us
-`about.html`
-
-Provides information about Kwa Olga and the business.
-
-### Menu
-`menu.html`
-
-Displays the available food and drinks.
-
-### Events
-`events.html`
-
-Displays specials, events and related information.
-
-### Gallery
-`gallery.html`
-
-Displays photographs related to Kwa Olga.
-
-### Bookings
-`bookings.html`
-
-Provides booking information and a booking form.
-
-### Contact
-`contact.html`
-
-Provides contact information and a contact form.
-
-### Location
-`location.html`
-
-Provides information about the business location and map information.
-
-### Registration
-`register.html`
-
-Demonstrates accessible client-side registration validation without storing account details.
-
----
-
-#  Website Features
-The website includes:
-
-- Consistent navigation across all pages.
-- Kwa Olga logo in the header.
-- Responsive website layout.
-- Hero sections with background imagery.
-- Business information.
-- Food and drinks menu.
-- Events and specials.
-- Image gallery.
-- Booking form.
-- Contact form.
-- Location information.
-- Responsive images.
-- Interactive navigation links.
-- Hover and focus effects.
-- Responsive desktop, tablet and mobile layouts.
-- External CSS stylesheet.
-- Shared JavaScript interactions and accessible form feedback.
-- Interactive Google Maps with a keyless embed and address-card fallback.
-- Responsive video backgrounds on bookings and gallery pages.
-- Section search and gallery lightbox.
-
----
-
-# Part 1 – HTML5 Development
-Part 1 established the basic structure and content of the website.
-
-The HTML pages were developed using semantic HTML5 elements such as:
-
-- `<header>`
-- `<nav>`
-- `<main>`
-- `<section>`
-- `<article>`
-- `<footer>`
-- `<form>`
-- `<label>`
-- `<input>`
-- `<select>`
-- `<textarea>`
-- `<figure>`
-- `<figcaption>`
-
-The website was divided into separate pages to make the information easier for users to navigate.
-
----
-
-#  Part 1 Feedback and Improvements
-Feedback and review from Part 1 were considered when developing Part 2.
-
-The main improvements made during Part 2 included:
-
-- Restoring and checking the complete navigation across all pages.
-- Ensuring the logo remains visible in the header.
-- Improving consistency between pages.
-- Creating a central external stylesheet.
-- Improving the visual hierarchy of headings and content.
-- Improving spacing and page layout.
-- Adding responsive design.
-- Improving navigation on smaller screens.
-- Improving image responsiveness.
-- Improving the gallery layout.
-- Adding hover and focus interaction.
-- Improving form styling.
-- Testing the website across different screen sizes.
-- Confirming that JavaScript was not required or introduced.
-
-These changes were recorded in the project's `CHANGELOG.md`.
-
----
-
-# Part 2 – CSS Development
-Part 2 uses an external stylesheet:
-
-```css
-css/style.css
 ```
-
-The external stylesheet is linked to the website pages and provides consistent styling throughout the project.
-
-The CSS includes:
-
-- Default styling.
-- Typography.
-- Colour scheme.
-- Layout.
-- Navigation.
-- Header.
-- Hero sections.
-- Buttons.
-- Forms.
-- Gallery.
-- Footer.
-- Responsive media queries.
-- Pseudo-classes.
-- Responsive images.
-
----
-
-#  CSS Default Styling
-The stylesheet uses a universal reset:
-
-```css
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 ```
+CSS custom properties are used to keep the main colours consistent:
 
-CSS custom properties are used to manage the website's main colours:
-
-```css
+```
 :root {
     --black: #000000;
     --dark-grey: #333333;
@@ -286,236 +66,141 @@ CSS custom properties are used to manage the website's main colours:
     --red: #C00000;
 }
 ```
+Black, grey and red form the main colour scheme, while white is used where needed for contrast and readability. These colours are applied to the header, navigation, buttons, content sections, forms, gallery and footer.
 
-The project also uses:
+### Typography and Layout
+The main font stack is `"Trebuchet MS", Arial, sans-serif`. Responsive heading sizes use CSS `clamp()` so text can scale between smaller and larger screens.
 
-- `scroll-behavior: smooth`
-- `max-width`
-- `box-sizing`
-- Responsive image sizing
-- Consistent margins and padding
+Consistent line height, spacing, heading styles and button typography help maintain readability throughout the website.
 
----
+**Flexbox** is used for layouts such as the header, logo alignment, navigation and hero content.
 
-# Typography
-Typography is controlled through the external stylesheet.
+**CSS Grid** is used for the image gallery, which is designed to display three columns on desktop, two on tablet and one on mobile.
 
-The website uses:
+The stylesheet also uses `:hover`, `:focus` and `:focus-visible` pseudo-classes to provide interactive feedback for navigation links, buttons, footer links and form controls.
 
-```css
-font-family: "Trebuchet MS", Arial, sans-serif;
+### Responsive Design
+Media queries adjust the layout for different screen sizes. The project uses breakpoints around `1024px`, `768px` and `480px`.
+
+- **Desktop:** Horizontal navigation, wider content areas and a three-column gallery.
+
+- **Tablet:** Adjusted logo and navigation spacing, content spacing and a two-column gallery.
+
+- **Mobile:** Smaller typography and logo, reduced spacing, vertical navigation and a one-column gallery.
+
+- **Small mobile:** Further reductions to navigation padding, hero height and heading size.
+Images use responsive sizing so they remain within their containers:
+
 ```
-
-Responsive typography is implemented using CSS `clamp()`.
-
-For example:
-
-```css
-font-size: clamp(2.5rem, 8vw, 5.2rem);
-```
-
-This allows headings to adjust according to the size of the user's screen.
-
-The typography styling includes:
-
-- Consistent heading sizes.
-- Uppercase headings.
-- Responsive headings.
-- Consistent line height.
-- Paragraph spacing.
-- Navigation typography.
-- Button typography.
-
----
-
-#  Layout Structure
-The website uses modern CSS layout techniques.
-
-### Flexbox
-Flexbox is used for:
-
-- Logo alignment.
-- Header layout.
-- Navigation layout.
-- Hero content.
-
-### CSS Grid
-CSS Grid is used for the image gallery.
-
-The gallery displays:
-
-- Three columns on desktop.
-- Two columns on tablet.
-- One column on mobile.
-
-This allows the gallery to adapt to different screen sizes.
-
----
-
-# Colour and Visual Design
-The primary colour scheme consists of:
-
-- **Black**
-- **Grey**
-- **Red**
-
-White is used where necessary for contrast and readability.
-
-The colours are applied consistently to:
-
-- Header.
-- Navigation.
-- Buttons.
-- Hero sections.
-- Content sections.
-- Gallery.
-- Forms.
-- Footer.
-
-The website also uses a red border to provide visual separation and emphasis.
-
----
-
-# CSS Pseudo-classes
-Pseudo-classes are used to improve interaction and accessibility.
-
-The stylesheet uses:
-
-```css
-:hover
-:focus
-:focus-visible
-```
-
-These are applied to elements such as:
-
-- Navigation links.
-- Buttons.
-- Footer links.
-- Form controls.
-
-For example, navigation and buttons change to the red colour when the user hovers over or focuses on them.
-
----
-
-# Responsive Design
-Responsive design was implemented using CSS media queries.
-
-The project uses three main breakpoints:
-
-```css
-1024px
-768px
-480px
-```
-
-### Desktop – Above 1024px
-The desktop layout includes:
-
-- Larger logo.
-- Horizontal navigation.
-- Larger hero sections.
-- Three-column gallery.
-- Wider content sections.
-
-  ![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Desktop%20view.png). 
-
-### Tablet – 768px to 1024px
-The tablet layout adjusts:
-
-- Logo dimensions.
-- Navigation spacing.
-- Gallery to two columns.
-- Content spacing.
-- Hero sections.
-
-  ![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Tablet%20view.png). 
-
-### Mobile – 480px to 768px
-The mobile layout includes:
-
-- Smaller logo.
-- Smaller typography.
-- Vertical navigation.
-- One-column gallery.
-- Smaller hero sections.
-- Adjusted content spacing.
-
-![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/0ea4d933f43179ded90e4982397ce91b78b455c2/images/Phone%20view.png). 
-
-
-### Small Mobile – Below 480px
-Additional adjustments are made for smaller mobile screens, including:
-
-- Smaller logo.
-- Smaller navigation text.
-- Reduced navigation padding.
-- Smaller hero headings.
-- Reduced hero height.
-![image alt](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Phone%20view%202.png).
-
----
-
-#  Responsive Navigation
-The navigation is responsive.
-
-On larger screens, navigation links are displayed horizontally.
-
-On mobile screens, the navigation changes to a vertical layout:
-
-```css
-nav ul {
-    flex-direction: column;
-    align-items: stretch;
-}
-```
-
-This makes the navigation links easier to use on smaller screens.
-
----
-
-#  Responsive Images
-Images use responsive sizing:
-
-```css
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 ```
+The website also uses background imagery, including `images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg`, with background sizing and positioning and a dark overlay to help keep text readable.
 
-This prevents images from overflowing their containers.
+### Responsive Design Screenshots
+The following screenshots were included in the original project documentation:
 
-Gallery images are also resized at smaller breakpoints.
+- **Desktop view:** [View screenshot](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Desktop%20view.png)
 
----
 
-#  Background Images
-The website uses a background image from Unsplash.
+- **Tablet view:** [View screenshot](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Tablet%20view.png)
 
-The image used in the CSS is:
 
-```css
-images/ville-kaisla-HNCSCpWrVJA-unsplash.jpg
+- **Phone view:** [View screenshot](https://github.com/KTselanngwe/Kwa-Olga/blob/0ea4d933f43179ded90e4982397ce91b78b455c2/images/Phone%20view.png)
+
+
+- **Small phone view:** [View screenshot](https://github.com/KTselanngwe/Kwa-Olga/blob/d89ebc078f4c8db4bcc1f2755d93a49b2233c8b6/images/Phone%20view%202.png)
+
+
+
+### Part 1 Feedback and Improvements
+The Part 1 review informed the improvements made during Part 2. These included:
+
+- Checking navigation between pages.
+- Keeping the logo visible in the header.
+- Creating a central external stylesheet.
+- Improving typography and spacing.
+- Styling forms and buttons.
+- Improving the gallery layout.
+- Adding hover and focus states.
+- Improving responsive navigation and images.
+- Testing desktop, tablet and mobile layouts.
+JavaScript was not part of Part 2. It was introduced in Part 3.
+
+## Part 3 – JavaScript and Interactivity
+Part 3 builds on the HTML5 structure from Part 1 and the CSS3 styling from Part 2 by adding interactive features. JavaScript is now part of the complete project.
+
+### JavaScript Files
+FilePurpose`js/bg-car.js`Controls the reusable decorative background-car component and its per-page presets.`js/script.js`Handles shared page interactions, including video backgrounds, gallery filtering, the lightbox and booking summary.`js/main.js`Handles mobile navigation, home-page behavior, package cards, scroll-reveal behavior and the current footer year.`js/data.js`Stores shared business details and package information, including names and prices.`js/map.js`Loads the Google Maps implementation and its fallback options for relevant pages.`css/bg-car.css`Controls background-car positioning and size for individual page presets.
+### JavaScript Features
+
+- **Animated background car:** A decorative car responds to scrolling and pointer movement. The `data-car` attribute on the page's `<body>` selects a preset for pages such as home, about, services, menu, specials, gallery, contact, booking and registration.
+- **Pause control:** Visitors can pause the car animation, and their preference is remembered.
+- **Motion accessibility:** The background car is decorative, is hidden from screen readers and respects reduced-motion preferences.
+- **Video backgrounds:** The Gallery and Bookings pages are designed to use a muted, looping background video with a still-image fallback.
+- **Data-driven package cards:** Home-page package cards are generated from shared information in `js/data.js`.
+- **Accessible mobile menu:** The menu supports keyboard interaction, closes with the Escape key, manages focus and prevents background scrolling while open.
+- **Automatic footer year:** The copyright year updates automatically.
+- **Gallery filtering and lightbox:** Visitors can filter gallery items and open an image in a larger view.
+- **Booking summary:** The booking interface can display the selected package, price and date.
+- **Form and registration checks:** Client-side validation and registration password checks provide feedback in the browser.
+- **Section search and scroll reveal:** Shared page behavior supports finding content and revealing sections as the visitor scrolls.
+- **Map fallback:** The map script is designed to provide a fallback map or an address and directions card if the Google Maps JavaScript API cannot load.
+Forms are demonstration-only. Client-side validation and booking summaries do not mean that submissions are sent to the business or stored in a database.
+
+### Required Assets for the Background Car and Video
+Check that these files exist at the indicated paths before treating the 3D car and video features as fully complete.
+
+FilePurpose`models/car.glb`3D car model.`images/car.png`Fallback car image.`images/car-poster.png`Poster image displayed while the 3D model loads.`videos/kwa-olga-tiktok.mp4`Background video.`images/video-poster.jpg`Still image displayed if the video cannot play.If the 3D model or video is unavailable, the relevant fallback is only available if its asset exists and the fallback code can load it. Missing files may generate browser 404 errors.
+
+### Customising the Background Car
+Camera presets are configured in `js/bg-car.js`:
+
+- `orbit` controls the horizontal camera angle.
+- `phi` controls the vertical camera angle.
+- `radius` controls the distance from the car.
+The `data-car` selectors in `css/bg-car.css` control the car's placement and size on individual pages.
+
+## Google Maps Configuration
+The map loader is in `js/map.js`. The coordinates described in the project are approximate for Meadowlands and should not be treated as a verified street address or exact business pin.
+
+The map implementation on the Contact, Location and Bookings pages must be tested on the deployed website before it is described as fully working.
+
+To configure the Google Maps JavaScript API:
+
+1. Open the [Google Cloud Console](https://console.cloud.google.com/) and create or select a project.
+2. Set up billing for the project and enable **Maps JavaScript API** under **APIs & Services → Library**.
+3. Create an API key under **APIs & Services → Credentials**.
+4. Restrict the key to the website's approved HTTP referrers, including the deployed GitHub Pages origin and the local development origin used for testing.
+5. Restrict API usage to **Maps JavaScript API** and set a budget alert. Budget alerts notify you about spending; they do not automatically stop usage.
+6. In `js/map.js`, replace `YOUR_API_KEY_HERE` in `GOOGLE_MAPS_API_KEY` with the configured key, and replace `KWA_OLGA_COORDINATES` with verified latitude and longitude values. Replace `DEMO_MAP_ID` with your own Map ID if the implementation requires one.
+7. Run the site using a local HTTP server rather than opening pages through `file://`.
+**Security note:** A browser-based Maps API key is visible to website visitors. Restrict it by HTTP referrer and API, and do not commit an unrestricted key to the repository. If the key has already been exposed, review and rotate it in Google Cloud Console.
+
+When the API key is absent or the JavaScript API fails, the code is intended to display a keyless map embed. If that also fails, it should display an address card and directions link. Verify each fallback in the browser.
+
+The exact street address, phone or WhatsApp number, opening hours and package inclusions still need confirmation before the website is finalised.
+
+## How to Run the Website Locally
+
+1. Open the `Kwa-Olga` project folder in Visual Studio Code.
+2. Start the website with the Live Server extension, or open a terminal in the project folder.
+3. If Python is installed, run:
+
 ```
+python -m http.server 8765
+```
+4. Open [http://127.0.0.1:8765/index.html](http://127.0.0.1:8765/index.html) in your browser.
+A local HTTP server is recommended because browsers may block or restrict model, video and map resources when pages are opened directly through `file://`.
 
-The image is used with CSS background properties including:
+## Project Structure
+The main project files are organised as follows. Some asset folders or files may need to be added if they are not yet present in the repository.
 
-- `background-image`
-- `background-position`
-- `background-size`
-- `background-attachment`
-
-A dark overlay is also used to improve text readability over the background image.
-
----
-
-#  Project Structure
-
-```text
+```
 Kwa-Olga/
-│
 ├── index.html
 ├── about.html
 ├── menu.html
@@ -524,191 +209,114 @@ Kwa-Olga/
 ├── bookings.html
 ├── contact.html
 ├── location.html
-│
+├── register.html
 ├── css/
-│   └── style.css
-│
+│   ├── style.css
+│   └── bg-car.css
+├── js/
+│   ├── bg-car.js
+│   ├── script.js
+│   ├── main.js
+│   ├── data.js
+│   └── map.js
 ├── images/
 │   ├── logo.jpeg
-│   └── other website images
-│
+│   ├── ville-kaisla-HNCSCpWrVJA-unsplash.jpg
+│   └── [other website images and required fallback assets]
+├── models/
+│   └── car.glb
+├── videos/
+│   └── kwa-olga-tiktok.mp4
 ├── README.md
 └── CHANGELOG.md
 ```
 
----
+## Technologies and Tools
 
-#  Technologies and Tools
-The project was developed using:
+- **HTML5:** Page structure and content.
+- **CSS3:** Styling and responsive design.
+- **Flexbox and CSS Grid:** Page and component layouts.
+- **CSS media queries:** Layout changes across desktop, tablet and mobile.
+- **CSS custom properties:** Consistent colour management.
+- **JavaScript:** Shared interactions, menus, gallery, booking summaries, form feedback and map loading.
+- **Visual Studio Code:** Code editor and local development.
+- **Git and GitHub:** Version control and project hosting.
+- **Google Maps Platform:** Map functionality, subject to API configuration and testing.
 
-- **HTML5** – Website structure and content.
-- **CSS3** – Styling and responsive design.
-- **CSS Flexbox** – Page and component layouts.
-- **CSS Grid** – Gallery layout.
-- **CSS Media Queries** – Responsive design.
-- **CSS Custom Properties** – Colour management.
-- **Visual Studio Code** – Code editor.
-- **GitHub** – Version control and project hosting.
+## Testing and Validation
 
-### JavaScript
-JavaScript is not included in this project.
+### Part 1 and Part 2
+The project documentation records checks for:
 
-The project focuses on the requirements for **HTML5 and CSS3**.
+- The presence of the required HTML pages.
+- Navigation links and internal links.
+- Images and forms.
+- Correct stylesheet linking.
+- Consistent styling, colours and typography.
+- Buttons and form styling.
+- Hover and focus effects.
+- Gallery layout.
+- Responsive behavior across desktop, tablet and mobile.
+HTML and CSS should be rechecked after any further edits.
 
----
+### Part 3
+The following results were reported during Part 3 development:
 
-#  Testing and Validation
-Testing was carried out during the development of both Part 1 and Part 2.
+- JavaScript syntax checks passed on the four core files `bg-car.js`, `script.js`, `main.js` and `data.js`.
+- Gallery filtering, the lightbox, booking summary and background-car pause control were tested in the browser.
+- No horizontal overflow was reported at viewport widths of 360px, 768px, 1024px and 1440px.
+- No JavaScript errors were reported during the described tests.
+- Mobile menu behavior was checked, including focus handling and closing with the Escape key.
+These results reflect the tests reported during development. They do not confirm that every required asset, Google Maps configuration or live deployment has been verified.
 
-### HTML Testing
-The following were checked:
+Before submission, test every page and link, check the browser console and network panel, and test the map and fallback behavior on the live website.
 
-- All required HTML pages exist.
-- Navigation links work between pages.
-- Images load correctly.
-- Forms are present.
-- Internal links are correctly implemented.
-- Page structures are consistent.
+## Known Limitations and Items to Confirm
 
-### CSS Testing
-The following were checked:
+- Confirm that `models/car.glb`, `images/car.png`, `images/car-poster.png`, `videos/kwa-olga-tiktok.mp4` and `images/video-poster.jpg` exist and load correctly. Missing files may cause 404 errors.
+- Verify Google Maps on both Contact and Location pages, including the API key, coordinates and fallback behavior.
+- Confirm the exact business address, phone or WhatsApp number, opening hours and package inclusions.
+- Customer reviews and business-performance counters have been omitted until genuine information is available.
+- Confirm that navigation labels are consistent; earlier notes identified both “Services & Menu” and “Menu”.
+- Use “Lifestyle Lounge” consistently in the header and page content; earlier notes identified a “Leisure Lounge” wording difference.
+- Ensure the displayed business location is described as approximate until the exact pin is verified.
 
-- `style.css` is correctly linked.
-- Styling is applied consistently.
-- Colours are consistent.
-- Typography is consistent.
-- Buttons display correctly.
-- Forms are styled correctly.
-- Hover effects work.
-- Focus effects work.
-- Gallery layout works.
+## GitHub and Version Control
+The project repository is [**Kwa-Olga**](https://github.com/KTselanngwe/Kwa-Olga) under the GitHub username `KTselanngwe`.
 
-### Responsive Testing
-The website was checked at:
+GitHub is used to store the project, track changes and record development progress. Commit messages should describe meaningful changes such as HTML page development, CSS styling, responsive design, JavaScript features, testing and documentation updates.
 
-- Desktop screen sizes.
-- Tablet screen sizes.
-- Mobile screen sizes.
+The intended GitHub Pages address recorded for the project is [https://ktselanngwe.github.io/Kwa-Olga/](https://ktselanngwe.github.io/Kwa-Olga/). Confirm the Pages settings and open the deployed site to verify the live URL before submitting it.
 
-Responsive changes were checked for:
+## Documentation
 
-- Navigation.
-- Logo.
-- Typography.
-- Hero sections.
-- Content sections.
-- Gallery.
-- Images.
-- Buttons.
+- `README.md`**:** Describes the project purpose, pages, Parts 1–3, technologies, responsive design, JavaScript features, setup, testing and known limitations.
+- `CHANGELOG.md`**:** Records the development history and significant changes made during Parts 1, 2 and 3.
 
-The HTML pages and `style.css` were validated after the Part 2 updates.
+## References
+The following sources informed the website development. Project-specific images and branding are identified separately from technical documentation.
 
----
+1. Unsplash (2026) *Car wash and vehicle cleaning images*. Available at: [https://unsplash.com/](https://unsplash.com/) (Accessed: 12 August 2026).
+2. Unsplash – Ville Kaisla (2026) *Vehicle image used as the website background: ville-kaisla-HNCSCpWrVJA-unsplash.jpg*. Available at: [https://unsplash.com/](https://unsplash.com/) (Accessed: 12 August 2026).
+3. Kwa Olga (2026) *Kwa Olga Car Wash & Lifestyle Lounge logo*. Original project asset.
+4. Kwa Olga (2026) *Kwa Olga menu images*. Original project assets.
+5. Mozilla Developer Network (MDN) (2026) *HTML: HyperText Markup Language*. Available at: [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) (Accessed: 16 September 2026).
+6. Mozilla Developer Network (MDN) (2026) *CSS: Cascading Style Sheets*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) (Accessed: 16 September 2026).
+7. Mozilla Developer Network (MDN) (2026) *CSS Flexible Box Layout*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout) (Accessed: 16 September 2026).
+8. Mozilla Developer Network (MDN) (2026) *CSS Grid Layout*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout) (Accessed: 16 September 2026).
+9. Mozilla Developer Network (MDN) (2026) *CSS Media Queries*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries) (Accessed: 16 September 2026).
+10. Mozilla Developer Network (MDN) (2026) *CSS Pseudo-classes*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) (Accessed: 16 September 2026).
+11. Mozilla Developer Network (MDN) (2026) *Using CSS custom properties*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_CSS_custom_properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_CSS_custom_properties) (Accessed: 16 September 2026).
+12. Mozilla Developer Network (MDN) (2026) *CSS *`clamp()`* function*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp) (Accessed: 16 September 2026).
+13. W3Schools (2026) *HTML Tutorial*. Available at: [https://www.w3schools.com/html/](https://www.w3schools.com/html/) (Accessed: 16 September 2026).
+14. W3Schools (2026) *CSS Tutorial*. Available at: [https://www.w3schools.com/css/](https://www.w3schools.com/css/) (Accessed: 16 September 2026).
+15. W3Schools (2026) *Responsive Web Design*. Available at: [https://www.w3schools.com/css/css_rwd_intro.asp](https://www.w3schools.com/css/css_rwd_intro.asp) (Accessed: 16 September 2026).
+16. GitHub (2026) *GitHub Documentation*. Available at: [https://docs.github.com/](https://docs.github.com/) (Accessed: 16 September 2026).
+17. Microsoft (2026) *Visual Studio Code Documentation*. Available at: [https://code.visualstudio.com/docs](https://code.visualstudio.com/docs) (Accessed: 16 September 2026).
+18. Google (2026) *Google Maps Platform documentation*. Available at: [https://developers.google.com/maps/documentation/javascript](https://developers.google.com/maps/documentation/javascript) (Accessed: 27 October 2026).
 
-# GitHub and Version Control
-The project is stored in the GitHub repository:
+## Project Status
 
-**Repository:** `Kwa-Olga`
-**Username:** `KTselanngwe`
-
-GitHub was used throughout the development process to:
-
-- Store the project.
-- Track changes.
-- Maintain project versions.
-- Record development progress.
-- Keep descriptive commits.
-
-Examples of development commit areas include:
-
-- Initial HTML development.
-- Page and content updates.
-- Navigation updates.
-- CSS implementation.
-- Responsive design.
-- Gallery improvements.
-- Final testing.
-- README and CHANGELOG updates.
-
----
-
-# Documentation
-The project includes two main documentation files:
-
-### README.md
-Documents:
-
-- Project information.
-- Project purpose.
-- Part 1 development.
-- Part 2 development.
-- Technologies.
-- Website pages.
-- CSS implementation.
-- Responsive design.
-- Testing.
-- GitHub development.
-- References.
-
-### CHANGELOG.md
-Records the development history of the website, including changes made during Part 1 and Part 2.
-
----
-
-#  References
-The following sources and project assets were used during the development of the Kwa Olga Car Wash & Lifestyle Lounge website.
-
- **Unsplash. (2026).** *Car wash and vehicle cleaning images*. Available at: [https://unsplash.com/](https://unsplash.com/) (Accessed: 12 August 2026).
- 
- **Unsplash – Ville Kaisla. (2026).** *Vehicle image used as the website background: ville-kaisla-HNCSCpWrVJA-unsplash.jpg*. Available at: [https://unsplash.com/](https://unsplash.com/) (Accessed: 12 August 2026).
- 
- **Kwa Olga. (2026).** *Kwa Olga Car Wash & Lifestyle Lounge logo*. Original project asset.
- 
- **Kwa Olga. (2026).** *Kwa Olga menu images*. Original project assets.
- 
- **Mozilla Developer Network (MDN). (2026).** *HTML: HyperText Markup Language*. Available at: [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) (Accessed: 16 September 2026).
- 
- **Mozilla Developer Network (MDN). (2026).** *CSS: Cascading Style Sheets*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) (Accessed: 16 September 2026).
- 
- **Mozilla Developer Network (MDN). (2026).** *CSS Flexible Box Layout*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout) (Accessed: 16 September 2026).
- 
- **Mozilla Developer Network (MDN). (2026).** *CSS Grid Layout*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout) (Accessed: 16 September 2026).
- 
- **Mozilla Developer Network (MDN). (2026).** *CSS Media Queries*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries) (Accessed: 16 September 2026).
- 
- **Mozilla Developer Network (MDN). (2026).** *CSS Pseudo-classes*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) (Accessed: 16 September 2026).
- 
- **Mozilla Developer Network (MDN). (2026).** *Using CSS custom properties*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_CSS_custom_properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_CSS_custom_properties) (Accessed: 16 September 2026).
- 
- **Mozilla Developer Network (MDN). (2026).** *CSS clamp() function*. Available at: [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp) (Accessed: 16 September 2026).
- 
- **W3Schools. (2026).** *HTML Tutorial*. Available at: [https://www.w3schools.com/html/](https://www.w3schools.com/html/) (Accessed: 16 September 2026).
- 
- **W3Schools. (2026).** *CSS Tutorial*. Available at: [https://www.w3schools.com/css/](https://www.w3schools.com/css/) (Accessed: 16 September 2026).
- 
- **W3Schools. (2026).** *Responsive Web Design*. Available at: [https://www.w3schools.com/css/css_rwd_intro.asp](https://www.w3schools.com/css/css_rwd_intro.asp) (Accessed: 16 September 2026).
- 
- **GitHub. (2026).** *GitHub Documentation*. Available at: [https://docs.github.com/](https://docs.github.com/) (Accessed: 16 September 2026).
- 
- **Microsoft. (2026).** *Visual Studio Code Documentation*. Available at: [https://code.visualstudio.com/docs](https://code.visualstudio.com/docs) (Accessed: 16 September 2026).
-
----
-
-#  Project Status
-
-### Part 1
-**Completed**
-
-The HTML5 structure, content, navigation, forms, images, gallery, menu, events, contact and location pages were developed.
-
-### Part 2
-**Completed**
-
-The external CSS stylesheet, desktop styling, responsive design, responsive navigation, responsive images, typography, layout, pseudo-classes and Part 1 improvements were implemented.
-
-### Current Project
-**Part 1 + Part 2 Completed**
-
-The current version contains the complete HTML5 and CSS3 development for the Kwa Olga Car Wash & Lifestyle Lounge website.
-
----
+- **Part 1 – HTML5:** Completed according to the project development notes.
+- **Part 2 – CSS3 and responsive design:** Completed according to the project development notes.
+- **Part 3 – JavaScript:** Implemented, with final verification still required for missing assets, map configuration and live-site behavior.
