@@ -2,11 +2,11 @@
 
 **Module:** WEDE5020 – Web 
 
-**Student:** Keabetswe 
+**Student:** Keabetswe Tselanngwe
 
-**Student Number:** 
+**Student Number:** ST10505914
 
-**Lecturer:** Mrs C 
+**Lecturer:** Mrs C Nukeri
 
 
 ## Project Overview
