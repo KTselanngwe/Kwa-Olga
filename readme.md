@@ -1,9 +1,13 @@
 # Kwa Olga Car Wash & Lifestyle Lounge
-**Module:** WEDE5020 – Web Development
-**Student:** Keabetswe Tselanngwe
-**Student Number:** ST10505914
-**Lecturer:** Mrs C Nukeri
-**Academic Year:** 2026
+
+**Module:** WEDE5020 – Web 
+
+**Student:** Keabetswe 
+
+**Student Number:** 
+
+**Lecturer:** Mrs C 
+
 
 ## Project Overview
 Kwa Olga Car Wash & Lifestyle Lounge is a multi-page website designed to provide customers with information about the business, its services, food and drinks menu, events, gallery, booking options, contact details and location.
@@ -11,7 +15,9 @@ Kwa Olga Car Wash & Lifestyle Lounge is a multi-page website designed to provide
 The project was developed in three parts:
 
 - **Part 1:** HTML5 website structure and content.
+
 - **Part 2:** CSS3 styling and responsive design.
+
 - **Part 3:** JavaScript functionality and interactivity.
 
 ## Website Purpose and Target Audience
